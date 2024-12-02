@@ -1,0 +1,5 @@
+require("full-border"):setup()
+require("git"):setup()
+require("folder-rules"):setup()
+-- require("omp"):setup()
+require("eza-preview"):setup()

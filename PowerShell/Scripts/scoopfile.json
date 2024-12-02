@@ -1,0 +1,108 @@
+{
+    "buckets": [
+        {
+            "Name": "main",
+            "Source": "https://github.com/ScoopInstaller/Main.git",
+            "Updated": "2024-11-28T11:30:11+07:00",
+            "Manifests": 1348
+        },
+        {
+            "Name": "extras",
+            "Source": "https://github.com/ScoopInstaller/Extras",
+            "Updated": "2024-12-02T12:02:15+07:00",
+            "Manifests": 2103
+        },
+        {
+            "Name": "versions",
+            "Source": "https://github.com/ScoopInstaller/Versions",
+            "Updated": "2024-11-28T09:08:52+07:00",
+            "Manifests": 471
+        }
+    ],
+    "apps": [
+        {
+            "Version": "24.08",
+            "Source": "main",
+            "Name": "7zip",
+            "Updated": "2024-11-18T15:58:40.321809+07:00",
+            "Info": ""
+        },
+        {
+            "Version": "0.9.0.1",
+            "Source": "main",
+            "Name": "clipboard",
+            "Updated": "2024-11-19T01:40:39.9231906+07:00",
+            "Info": ""
+        },
+        {
+            "Version": "0.20.8",
+            "Source": "main",
+            "Name": "eza",
+            "Updated": "2024-11-19T14:57:00.7723186+07:00",
+            "Info": ""
+        },
+        {
+            "Version": "7.1",
+            "Source": "main",
+            "Name": "ffmpeg",
+            "Updated": "2024-11-19T01:10:11.7374963+07:00",
+            "Info": ""
+        },
+        {
+            "Version": "7.1.1-41",
+            "Source": "main",
+            "Name": "imagemagick",
+            "Updated": "2024-11-18T15:44:52.6484508+07:00",
+            "Info": ""
+        },
+        {
+            "Version": "1.76",
+            "Source": "main",
+            "Name": "innounp",
+            "Updated": "2024-11-18T15:44:14.3596904+07:00",
+            "Info": ""
+        },
+        {
+            "Version": "1.7.1",
+            "Source": "main",
+            "Name": "jq",
+            "Updated": "2024-11-17T23:08:37.3470127+07:00",
+            "Info": ""
+        },
+        {
+            "Version": "24.1",
+            "Source": "main",
+            "Name": "miktex",
+            "Updated": "2024-10-01T15:08:16.6088273+07:00",
+            "Info": ""
+        },
+        {
+            "Version": "14.21.3",
+            "Source": "versions",
+            "Name": "nodejs14",
+            "Updated": "2024-11-28T11:40:19.203117+07:00",
+            "Info": ""
+        },
+        {
+            "Version": "24.08.0-0",
+            "Source": "main",
+            "Name": "poppler",
+            "Updated": "2024-11-17T23:08:19.7921399+07:00",
+            "Info": ""
+        },
+        {
+            "Version": "1.21.1",
+            "Source": "main",
+            "Name": "starship",
+            "Updated": "2024-11-19T01:47:55.292281+07:00",
+            "Info": ""
+        },
+        {
+            "Version": "0.6.1",
+            "Source": "main",
+            "Name": "tldr",
+            "Updated": "2024-11-22T21:33:45.0192603+07:00",
+            "Info": ""
+        }
+    ]
+}
