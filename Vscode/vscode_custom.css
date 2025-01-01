@@ -5,47 +5,50 @@
     margin-left: -25% !important;
     transform: translateY(-50%) !important;
     top: 50% !important;
+    border: 1px solid #e5e5e5 !important;
     /* padding: 15px !important; */
     /* background-color: rgb(41, 46, 53) !important; */
     /* border-radius: 10px !important; */
 }
 
 .quick-input-widget .quick-input-header {
+    font-size: 16px;
     padding: 0px !important;
     margin-bottom: 10px;
 }
-
 .quick-input-widget .monaco-inputbox {
+    font-size: 16px;
     padding: 10px !important;
     border-radius: 5px !important;
 }
 
-.quick-input-widget .monaco-list-rows {
+/* .quick-input-widget .monaco-list-rows {
     top: 0 !important;
     max-height: 670px !important;
     min-height: 300px !important;
-}
+} */
 
 .quick-input-widget .monaco-list-row {
-    position: static !important;
+    /* position: static !important; */
     border-bottom: 1px solid !important;
-    padding: 5px !important;
+    /* margin: 10px !important; */
     height: auto !important;
 }
-
 .quick-input-widget .quick-input-list-entry {
     position: relative;
-    padding: 0 5px 0px 15px;
+    padding: 0px 5px 0px 15px;
 }
-
+.quick-input-widget .quick-input-list-entry {
+    font-size: 20px;
+}
 .quick-input-widget .quick-input-list-entry .codicon[class*="codicon-"] {
     font-size: 16px;
 }
 
-.quick-input-widget .quick-input-list-entry .monaco-action-bar {
+/* .quick-input-widget .quick-input-list-entry .monaco-action-bar {
     position: absolute;
     left: 0;
-}
+} */
 
 .monaco-workbench
     .part.titlebar
