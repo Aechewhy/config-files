@@ -1,41 +1,41 @@
 local M = {}
 
 function M:peek()
-	local start, cache = os.clock(), ya.file_cache(self)
-	if not cache or self:preload() ~= 1 then
+	local start, cache = os.clock(), ya.file_cache(job)
+	if not cache or job:preload() ~= 1 then
 		return
 	end
 
 	ya.sleep(math.max(0, PREVIEW.image_delay / 1000 + start - os.clock()))
-	ya.image_show(cache, self.area)
-	ya.preview_widgets(self, {})
+	ya.image_show(cache, job.area)
+	ya.preview_widgets(job, {})
 end
 
 function M:seek(units)
 	local h = cx.active.current.hovered
-	if h and h.url == self.file.url then
+	if h and h.url == job.file.url then
 		ya.manager_emit("peek", {
 			math.max(0, cx.active.preview.skip + units),
-			only_if = self.file.url,
+			only_if = job.file.url,
 		})
 	end
 end
 
 function M:preload()
-	local percentage = 5 + self.skip
+	local percentage = 5 + job.skip
 	if percentage > 95 then
-		ya.manager_emit("peek", { 90, only_if = self.file.url, upper_bound = true })
+		ya.manager_emit("peek", { 90, only_if = job.file.url, upper_bound = true })
 		return 2
 	end
 
-	local cache = ya.file_cache(self)
+	local cache = ya.file_cache(job)
 	if not cache or fs.cha(cache) then
 		return 1
 	end
 
 	-- Get the video duration in seconds
 	local probe = Command("ffprobe"):args({
-		"-i", tostring(self.file.url), "-show_entries", "format=duration", "-v", "quiet", "-of", "csv=p=0"
+		"-i", tostring(job.file.url), "-show_entries", "format=duration", "-v", "quiet", "-of", "csv=p=0"
 	}):stdout(Command.PIPED):output()
 
 	-- Calculate second to take thumbnail
@@ -46,7 +46,7 @@ function M:preload()
 		-- Replace `,` with `.` to prevent locale issues where the decimal separator is `,`
 		tostring(sec):gsub(",", "."),
 		"-i",
-		tostring(self.file.url),
+		tostring(job.file.url),
 		"-vf",
 		"scale=" .. tostring(PREVIEW.max_width) .. ":-1",
 		"-q:v",
