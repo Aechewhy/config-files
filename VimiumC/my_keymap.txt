@@ -1,0 +1,35 @@
+unmap 0
+map 0 firstTab
+map $ lastTab
+map J nextTab
+map K previousTab
+map xx removeTab
+map xr removeRightTab
+map xz closeTabsOnLeft $count=-1 # close onely one
+map xc closeTabsOnRight $count=1
+map xZ closeTabsOnLeft
+map xC closeTabsOnRight 
+map xX closeOtherTabs
+map Xx restoreTab
+map Xr restoreGivenTab
+map Xd discardTab
+map sc sortTabs sort=createTime
+map sr sortTabs sort=recency
+map <c-p> togglePinTab
+map < moveTabLeft
+map > moveTabRight
+map wn moveTabToNewWindow
+map wi moveTabToIncognito
+map ww joinTabs
+map pp visitPreviousTab
+run po pp acrossWindows
+map Ct copyWindowInfo type="tab"
+map Ca copyCurrentUrl type="frame"
+map Cc autoCopy url decode
+map Cs searchAs
+map Cv autoOpen
+run Cd Cv keyword="dict"
+run Cb Cd reuse="if-last-wnd" \
+  replace="https://cn.bing.com/dict/" window="popup"
+run Cg Cv keyword="google"
+run CT <c-v> keyword="t"
