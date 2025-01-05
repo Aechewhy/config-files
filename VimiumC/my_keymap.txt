@@ -1,35 +1,60 @@
 unmap 0
-map 0 firstTab
+map \c sortTabs sort=createTime
+map \r sortTabs sort=recency
+map < moveTabLeft
+map <a-<> previousTab
+map <a->> nextTab
+map <a-|> enterInsertMode
+map <a-g> Vomnibar.activate
+map <a-r> reloadTab
+map <c-`> Marks.clearLocal
+map <c-~> Marks.clearGlobal
+map <c-p> togglePinTab
+map <s-down> scrollPxDown
+map <s-left> scrollPxLeft
+map <s-right> scrollPxRight
+map <s-up> scrollPxUp
+map > moveTabRight
 map $ lastTab
+map 0 firstTab
+map cu Vomnibar.activateEditUrl
+map cU Vomnibar.activateEditUrlInNewTab
+map D scrollFullPageDown
+map Fd LinkHints.activateDownloadLink
+map Fe LinkHints.activateOpenVomnibar
+map Fi LinkHints.activateCopyImage
+map FI LinkHints.activateOpenImage
+map Fq LinkHints.activateWithQueue
+map Fs LinkHints.activateSearchLinkText
+map Ft LinkHints.activateCopyLinkText
+map Fu LinkHints.activateCopyLinkUrl
+map Fv LinkHints.activateSelect
+map Fw LinkHints.activateOpenIncognito
+map i focusInput
 map J nextTab
 map K previousTab
-map xx removeTab
-map xr removeRightTab
-map xz closeTabsOnLeft $count=-1 # close onely one
-map xc closeTabsOnRight $count=1
-map xZ closeTabsOnLeft
-map xC closeTabsOnRight 
-map xX closeOtherTabs
-map Xx restoreTab
-map Xr restoreGivenTab
-map Xd discardTab
-map sc sortTabs sort=createTime
-map sr sortTabs sort=recency
-map <c-p> togglePinTab
-map < moveTabLeft
-map > moveTabRight
-map wn moveTabToNewWindow
-map wi moveTabToIncognito
-map ww joinTabs
+map O Vomnibar.activate
+map o Vomnibar.activateInNewTab
+map Pc openCopiedUrlInCurrentTab
+map Pn openCopiedUrlInNewTab
+map po visitPreviousTab acrossWindows
 map pp visitPreviousTab
-run po pp acrossWindows
-map Ct copyWindowInfo type="tab"
-map Ca copyCurrentUrl type="frame"
-map Cc autoCopy url decode
-map Cs searchAs
-map Cv autoOpen
-run Cd Cv keyword="dict"
-run Cb Cd reuse="if-last-wnd" \
-  replace="https://cn.bing.com/dict/" window="popup"
-run Cg Cv keyword="google"
-run CT <c-v> keyword="t"
+map s LinkHints.activateOpenInNewForegroundTab
+map S LinkHints.activateOpenInNewTab
+map U scrollFullPageUp
+map wi moveTabToIncognito
+map wn moveTabToNewWindow
+map ww joinTabs
+map xC closeTabsOnRight 
+map xc closeTabsOnRight $count=1
+map Xd discardTab
+map xr removeRightTab
+map Xr restoreGivenTab
+map xX closeOtherTabs
+map xx removeTab
+map Xx restoreTab
+map xZ closeTabsOnLeft
+map xz closeTabsOnLeft $count=-1 # close onely one
+map z0 zoomReset
+map zi zoomIn
+map zo zoomOut
