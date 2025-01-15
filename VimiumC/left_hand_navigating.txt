@@ -1,15 +1,7 @@
 unmapAll
 map ? showHelp
 map <a-/> enterInsertMode
-# map <a-/> openUrl \
-  url="vimium://status/toggle-disabled/^%20<a-/>"
-map <a-?> enterInsertMode key="<a-?>"
 # map <c-b:i> editText run="replace,_$s%20%s_"
-# map <a-t> createTab
-run <a-c> c
-run <a-v> v
-run <a-s-c> <a-v>
-map <a-r> reloadTab
 
 map w scrollPageUp
 map s scrollPageDown
@@ -17,31 +9,48 @@ map a scrollLeft
 map d scrollRight
 map q scrollUp
 map e scrollDown
-map W scrollToTop
-map S scrollToBottom
+map W scrollFullPageUp
+map S scrollFullPageDown
+map gg scrollToTop
+map G scrollToBottom
 map A goBack
-run <a-s-a> A reuse="newFg"
+run <c-s-a> A reuse="newFg"
 map D goForward
-map Q goPrevious
-map E goNext
-run j e
-run k q
+map Q scrollToTop
+map E scrollToBottom
 
-map r reload
-map R reloadGivenTab
-map <a-s-r> reopenTab
+map Rr goUp
+map RR goToRoot
+map z previousTab
+map x nextTab
+map Z firstTab
+map X lastTab
+map <a-z> moveTabLeft
+map <a-x> moveTabRight
+map rr visitPreviousTab
+map ra visitPreviousTab acrossWindows
+
+map cc removeTab
+map cd discardTab
+map cZ closeTabsOnLeft
+map cX closeTabsOnRight 
+map cz closeTabsOnLeft $count=-1 # close onely one
+map cx closeTabsOnRight $count=1 # close only one
+map cC closeOtherTabs
+map cr removeRightTab
+map CC restoreGivenTab
+map Cc restoreTab
+
 map f LinkHints.activate
+map Ff linkhints.activateopeninnewtab
+map FF linkhints.activateopeninnewforegroundtab
+run Fr f button="right"
 run <v-lh> LinkHints.activate$s mask=
 run Fq lh WithQueue
-run Fr f button="right"
 run Fa lh CopyLinkUrl
 run Ft lh CopyLinkText
 run Fs lh SearchLinkText
-run Fb Fs keyword="bing"
-run Fc Ft
 run FC lh CopyImage
-map Ff LinkHints.activateHover \
-  toggle={".bilibili-player-area":"video-control-show"}
 run Fz lh Leave
 run Fd lh DownloadLink
 run FD lh DownloadImage
@@ -53,6 +62,7 @@ run Fg Gg newtab="force"
 run FT lh OpenVomnibar
 run FE f action="edit-url"
 run Fv lh Select
+
 map o Vomnibar.activate
 map <a-g> Vomnibar.activateInNewTab
 run g <a-g> preferTabs="new"
@@ -66,29 +76,13 @@ map <c-s-d> duplicateTab
 map <a-s-f> toggleLinkHintCharacters \
   value="hjklyuiopnm"
 
-map z restoreTab
-map x removeTab goto="previous,near" highlighted
-map c previousTab
-map v nextTab
-map Z restoreGivenTab
-map Xx removeRightTab
-map Xz closeTabsOnLeft $count=-1
-map Xc closeTabsOnRight $count=1
-map Xa closeOtherTabs
-map Ct copyWindowInfo type="tab"
-map Ca copyCurrentUrl type="frame"
-map Cc autoCopy url decode
-map Cs searchAs
-map Cv autoOpen
-run Cd Cv keyword="dict"
-run Cb Cd reuse="if-last-wnd" \
-  replace="https://cn.bing.com/dict/" window="popup"
-run Cg Cv keyword="google"
-run CT <c-v> keyword="t"
-map V openCopiedUrlInCurrentTab
-run Ce V \
-  keyword="v.math-copy"
-map <c-v> openCopiedUrlInNewTab copied="auto-urls"
+map Yt copyWindowInfo type="tab"
+map Ya copyCurrentUrl type="frame"
+map Yc autoCopy url decode
+map Ys searchAs
+map Yv autoOpen
+run Yg Cv keyword="google"
+run YT <c-v> keyword="t"
 
 map u goUp
 run i focusInput:(<c-m>:W+150wait)%cfocusInput \
@@ -120,8 +114,6 @@ map <a-.> performAnotherFind
 map ; enterVisualMode
 map : enterVisualLineMode
 run <f8> ;
-map > moveTabRight
-map < moveTabLeft
 run m Marks.activate$s#swap mask=
 run M m Create
 map <c-m> mainFrame
