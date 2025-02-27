@@ -58,6 +58,7 @@ map FD LinkHints.activateDownloadImage
 
 map Pc openCopiedUrlInCurrentTab
 map Pn openCopiedUrlInNewTab
+map <c-a-c> copyWindowInfo format="${URL}"
 
 map <c-`> Marks.clearLocal
 map <c-~> Marks.clearGlobal
@@ -84,3 +85,5 @@ map <a-|> enterInsertMode
 map <c-p> togglePinTab
 map i focusInput
 map <c-/> clearFindHistory
+
+" Character use for link hints: asdfghjkl;weruiovn

@@ -1,152 +1,97 @@
 unmapAll
 map ? showHelp
 map <a-/> enterInsertMode
-# map <c-b:i> editText run="replace,_$s%20%s_"
-
-map w scrollPageUp
-map s scrollPageDown
+map q scrollPageUp
+map e scrollPageDown
 map a scrollLeft
 map d scrollRight
-map q scrollUp
-map e scrollDown
-map W scrollFullPageUp
-map S scrollFullPageDown
+map w scrollUp
+map s scrollDown
+map Q scrollFullPageUp
+map E scrollFullPageDown
 map gg scrollToTop
 map G scrollToBottom
 map A goBack
 run <c-s-a> A reuse="newFg"
 map D goForward
-map Q scrollToTop
-map E scrollToBottom
 
 map Rr goUp
 map RR goToRoot
 map z previousTab
-map x nextTab
-map Z firstTab
-map X lastTab
-map <a-z> moveTabLeft
-map <a-x> moveTabRight
+map c nextTab
+map <a-s-c> lastTab
+map <a-z> firstTab 
+map Z moveTabLeft
+map C moveTabRight
+map M moveTabToNextWindow
 map rr visitPreviousTab
 map ra visitPreviousTab acrossWindows
 
-map cc removeTab
-map cd discardTab
-map cZ closeTabsOnLeft
-map cX closeTabsOnRight 
-map cz closeTabsOnLeft $count=-1 # close onely one
-map cx closeTabsOnRight $count=1 # close only one
-map cC closeOtherTabs
-map cr removeRightTab
-map CC restoreGivenTab
-map Cc restoreTab
+map xx removeTab
+map xd discardTab
+map xZ closeTabsOnLeft
+map xC closeTabsOnRight 
+map xz closeTabsOnLeft $count=-1 # close onely one
+map xc closeTabsOnRight $count=1 # close only one
+map xX closeOtherTabs
+map xr removeRightTab
+map XX restoreGivenTab
+map Xx restoreTab
+map Xr reopenTab
+
+map gw moveTabToNewWindow
+map gi moveTabToIncognito
+map gW joinTabs
+
+map \c sortTabs sort="createTime"
+map \r sortTabs sort="recency"
 
 map f LinkHints.activate
-map Ff linkhints.activateopeninnewtab
-map FF linkhints.activateopeninnewforegroundtab
-run Fr f button="right"
-run <v-lh> LinkHints.activate$s mask=
-run Fq lh WithQueue
-run Fa lh CopyLinkUrl
-run Ft lh CopyLinkText
-run Fs lh SearchLinkText
-run FC lh CopyImage
-run Fz lh Leave
-run Fd lh DownloadLink
-run FD lh DownloadImage
-run Fi lh OpenImage
-run FI lh OpenIncognito
-run F<a-e> lh Edit
-run Gg lh OpenInNewTab
-run Fg Gg newtab="force"
-run FT lh OpenVomnibar
-run FE f action="edit-url"
-run Fv lh Select
+map v LinkHints.activateOpenInNewTab
+map V LinkHints.activateOpenInNewForegroundTab
+map Fd LinkHints.activateDownloadLink
+map Fe LinkHints.activateOpenVomnibar
+map Fi LinkHints.activateCopyImage
+map FI LinkHints.activateOpenImage
+map Fq LinkHints.activateWithQueue
+map Fs LinkHints.activateSearchLinkText
+map Ft LinkHints.activateCopyLinkText
+map Fu LinkHints.activateCopyLinkUrl
+map Fv LinkHints.activateSelect
+map Fw LinkHints.activateOpenIncognito
+map FD LinkHints.activateDownloadImage
 
-map o Vomnibar.activate
-map <a-g> Vomnibar.activateInNewTab
-run g <a-g> preferTabs="new"
-map t Vomnibar.activateTabSelection preferTabs="new"
-run T t tree="from-start" currentWindow
+map t Vomnibar.activateTabs
+map O Vomnibar.activate
+map o Vomnibar.activateInNewTab
+map b Vomnibar.activateBookmarksInNewTab
+map B Vomnibar.activateBookmarks
+map u Vomnibar.activateEditUrl
+map U Vomnibar.activateEditUrlInNewTab
 map h Vomnibar.activateHistoryInNewTab
-run b <a-g> keyword="bing"
-map Fe Vomnibar.activateUrl
-map B Vomnibar.activateBookmarksInNewTab
-map <c-s-d> duplicateTab
-map <a-s-f> toggleLinkHintCharacters \
-  value="hjklyuiopnm"
+map H Vomnibar.activateHistory
 
-map Yt copyWindowInfo type="tab"
-map Ya copyCurrentUrl type="frame"
-map Yc autoCopy url decode
-map Ys searchAs
-map Yv autoOpen
-run Yg Cv keyword="google"
-run YT <c-v> keyword="t"
-
-map u goUp
-run i focusInput:(<c-m>:W+150wait)%cfocusInput \
-  o.keep o.select="all-line" o.reachable=false \
-  o.clickable=".js-toggle-inline-comment-form" \
-  o.prefer="#js-issues-search,#searchEngines"
-# map i focusInput $if={"before":"v1.92.0"}
-
-map n nextFrame
-map UU goToRoot
-map Uu goUp trailingSlash
-map Uf parentFrame
-map N moveTabToNewWindow
-map I moveTabToIncognito
-map <a-n> moveTabToNextWindow tabs
-map <c-i> toggleCS
-map <c-s-i> enableCSTemp
-map <a-s-i> clearCS
-map p visitPreviousTab acrossWindows
-map Pp togglePinTab
-map Pn passNextKey
-run Pm Pn normal
-map <a-m> toggleMuteTab
-
-map / enterFindMode postOnEsc
-map . performFind
-map , performBackwardsFind
-map <a-.> performAnotherFind
-map ; enterVisualMode
-map : enterVisualLineMode
-run <f8> ;
-run m Marks.activate$s#swap mask=
-run M m Create
-map <c-m> mainFrame
-map <a-s-h> clearFindHistory
-
-run ` m
-run ~ M
-map <c-~> Marks.clearGlobal
+map m Marks.activateCreate
+map ` Marks.activate
 map <c-`> Marks.clearLocal
+map <c-~> Marks.clearGlobal
 
-map <f1> simBackspace
-map <s-f1> switchFocus select="all-line"
-run <a-f3> Cd
-map <c-up> scrollPxUp
-map <c-down> scrollPxDown
-map <c-left> scrollPxLeft
-map <c-right> scrollPxRight
-map <a-s-f12> debugBackground
-map <s-f12> focusOrLaunch url="vimium://options" \
-  reuse="reuse-in-cur-wnd"
+map / enterFindMode
+map n performFind
+map N performBackwardsFind
+map <a-n> performAnotherFind
+map <c-/> clearFindHistory
 
-run <v-sia> searchInAnother##keyword=$s mask
-run GG sia g
-run Gt sia t
-run GT sia t.e
-run Gd sia d
-run Gb sia b
-run Gs sia g.s
+map [ zoomIn
+map ] zoomOut
 
-map Gn toggleVomnibarStyle
-map FF showTip \
-  text="Maybe\u0020Caps\u0020Lock\u0020is\u0020ON\u0020!!!"
-map <a-s-d> closeDownloadBar
+map Pc openCopiedUrlInCurrentTab
+map Pn openCopiedUrlInNewTab
+map <c-a-c> copyWindowInfo format="${URL}" 
 
-#shortcut createTab position="end"
-#shortcut userCustomized1 command="autoOpen" keyword="dict"
+map <a-|> enterInsertMode
+map i focusInput
+map <c-p> togglePinTab
+map l toggleReaderMode
+
+" Character use for link hints: qwertadfgzcvxb

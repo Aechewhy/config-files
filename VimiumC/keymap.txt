@@ -71,6 +71,7 @@ map x removeTab goto="previous,near" highlighted
 map c previousTab
 map v nextTab
 map Z restoreGivenTab
+
 map Xx removeRightTab
 map Xz closeTabsOnLeft $count=-1
 map Xc closeTabsOnRight $count=1
