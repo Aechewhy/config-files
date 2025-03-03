@@ -1,0 +1,36 @@
+@import "Cohesion/Cohesion.css";
+/* @import "natsumi-tweaks/natsumi-tweaks.css"; */
+@import "natsumi/natsumi.css";
+:root {
+    --zen-dialog-background: var(
+        --zen-main-browser-background-toolbar
+    ) !important;
+    --panel-separator-color: rgba(0, 0, 0, 0.17) !important;
+    --zen-appcontent-border: none !important;
+    --button-hover-bg-color: rgba(0, 0, 0, 0.17) !important;
+    --panel-item-hover-bgcolor: var(--button-hover-bg-color) !important;
+    --zen-main-browser-background: #00000000 !important;
+}
+
+/* Add shadow to the Nav Bar */
+#nav-bar {
+    box-shadow: 0px -1px 3px 0px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Add shadow to the Browser Container */
+.browserSidebarContainer {
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Add margin to the Nav Bar */
+#nav-bar {
+    margin-top: 11px !important;
+    margin-right: 10px !important;
+}
+
+/* Add margin to the Browser Container */
+.browserSidebarContainer {
+    margin-left: 2px !important;
+    margin-bottom: 4px !important;
+    margin-right: 4px !important;
+}

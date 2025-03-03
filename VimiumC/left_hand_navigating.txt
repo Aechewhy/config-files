@@ -1,25 +1,26 @@
 unmapAll
 map ? showHelp
 map <a-/> enterInsertMode
-map q scrollPageUp
-map e scrollPageDown
-map a scrollLeft
-map d scrollRight
+
+map W scrollPageUp
+map S scrollPageDown
+map A scrollLeft
+map D scrollRight
 map w scrollUp
 map s scrollDown
-map Q scrollFullPageUp
-map E scrollFullPageDown
-map gg scrollToTop
-map G scrollToBottom
-map A goBack
+map q scrollFullPageUp
+map e scrollFullPageDown
+map Q scrollToTop
+map E scrollToBottom
+map a goBack
 run <c-s-a> A reuse="newFg"
-map D goForward
+map d goForward
 
 map Rr goUp
 map RR goToRoot
 map z previousTab
 map c nextTab
-map <a-s-c> lastTab
+map <a-c> lastTab
 map <a-z> firstTab 
 map Z moveTabLeft
 map C moveTabRight
@@ -60,6 +61,7 @@ map Fu LinkHints.activateCopyLinkUrl
 map Fv LinkHints.activateSelect
 map Fw LinkHints.activateOpenIncognito
 map FD LinkHints.activateDownloadImage
+map Fh LinkHints.activateHover
 
 map t Vomnibar.activateTabs
 map O Vomnibar.activate
@@ -87,11 +89,11 @@ map ] zoomOut
 
 map Pc openCopiedUrlInCurrentTab
 map Pn openCopiedUrlInNewTab
-map <c-a-c> copyWindowInfo format="${URL}" 
+map <a-c-c> copyCurrentUrl type=url
 
 map <a-|> enterInsertMode
 map i focusInput
 map <c-p> togglePinTab
 map l toggleReaderMode
 
-" Character use for link hints: qwertadfgzcvxb
+" Character use for link hints: wertadfgzcvxbq
