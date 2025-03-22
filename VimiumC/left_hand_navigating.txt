@@ -8,13 +8,15 @@ map A scrollLeft
 map D scrollRight
 map w scrollUp
 map s scrollDown
-map q scrollFullPageUp
-map e scrollFullPageDown
+map q scrollPxUp count=720 wait=300 
+map e scrollPxDown count=720 wait=300 
 map Q scrollToTop
 map E scrollToBottom
 map a goBack
 run <c-s-a> A reuse="newFg"
 map d goForward
+map { goPrevious
+map } goNext
 
 map Rr goUp
 map RR goToRoot
@@ -57,7 +59,7 @@ map FI LinkHints.activateOpenImage
 map Fq LinkHints.activateWithQueue
 map Fs LinkHints.activateSearchLinkText
 map Ft LinkHints.activateCopyLinkText
-map Fu LinkHints.activateCopyLinkUrl
+map Fc LinkHints.activateCopyLinkUrl
 map Fv LinkHints.activateSelect
 map Fw LinkHints.activateOpenIncognito
 map FD LinkHints.activateDownloadImage
@@ -86,14 +88,21 @@ map <c-/> clearFindHistory
 
 map [ zoomIn
 map ] zoomOut
+map | zoomReset
 
 map Pc openCopiedUrlInCurrentTab
 map Pn openCopiedUrlInNewTab
-map <a-c-c> copyCurrentUrl type=url
+map <a-c-c> copyCurrentUrl type="url"
 
 map <a-|> enterInsertMode
 map i focusInput
 map <c-p> togglePinTab
 map l toggleReaderMode
+map ' enterVisualMode
+map " enterVisualLineMode
 
+map ;y autoOpen keyword="YT"
+map ;r autoOpen keyword="RD"
+map ;m autoOpen keyword="MS"
+map ;g autoOpen keyword="GPT"
 " Character use for link hints: wertadfgzcvxbq

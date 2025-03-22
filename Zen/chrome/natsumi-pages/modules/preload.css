@@ -37,45 +37,110 @@ Edit the natsumi-config.css file instead.
  */
 
 * {
-  /* Colors */
-  --natsumi-primary-color: var(--natsumi-pages-accent-color, #aac7ff);
-  --natsumi-colors-primary: color-mix(in srgb, var(--natsumi-primary-color) 50%, black 50%);
-  --natsumi-colors-secondary: color-mix(in srgb, var(--natsumi-colors-primary) 20%, white 80%);
-  --natsumi-colors-tertiary: color-mix(in srgb, var(--natsumi-primary-color) 2%, white 98%);
-  --natsumi-colors-primary-foreground: color-mix(in srgb, var(--natsumi-primary-color) 80%, white 20%);
+    /* Colors */
+    --natsumi-primary-color: var(--natsumi-pages-accent-color, #00000000);
+    --natsumi-colors-primary: color-mix(
+        in srgb,
+        var(--natsumi-primary-color) 50%,
+        black 50%
+    );
+    --natsumi-colors-secondary: color-mix(
+        in srgb,
+        var(--natsumi-colors-primary) 20%,
+        white 80%
+    );
+    --natsumi-colors-tertiary: color-mix(
+        in srgb,
+        var(--natsumi-primary-color) 2%,
+        white 98%
+    );
+    --natsumi-colors-primary-foreground: color-mix(
+        in srgb,
+        var(--natsumi-primary-color) 80%,
+        white 20%
+    );
 
-  @media (prefers-color-scheme: dark) {
-    --natsumi-colors-primary: color-mix(in srgb, var(--natsumi-primary-color) 20%, #202020 80%);
-    --natsumi-colors-secondary: color-mix(in srgb, var(--natsumi-primary-color) 30%, #202020 70%);
-    --natsumi-colors-tertiary: color-mix(in srgb, var(--natsumi-primary-color) 1%, #202020 99%);
-    --natsumi-colors-primary-foreground: color-mix(in srgb, var(--natsumi-primary-color) 80%, white 20%);
+    @media (prefers-color-scheme: dark) {
+        --natsumi-colors-primary: color-mix(
+            in srgb,
+            var(--natsumi-primary-color) 20%,
+            #202020 80%
+        );
+        --natsumi-colors-secondary: color-mix(
+            in srgb,
+            var(--natsumi-primary-color) 30%,
+            #202020 70%
+        );
+        --natsumi-colors-tertiary: color-mix(
+            in srgb,
+            var(--natsumi-primary-color) 1%,
+            #202020 99%
+        );
+        --natsumi-colors-primary-foreground: color-mix(
+            in srgb,
+            var(--natsumi-primary-color) 80%,
+            white 20%
+        );
 
-    @media (-moz-bool-pref: 'zen.theme.color-prefs.colorful') {
-      --natsumi-colors-primary: color-mix(in srgb, var(--natsumi-primary-color) 50%, black 50%);
-      --natsumi-colors-secondary: color-mix(in srgb, var(--natsumi-primary-color) 40%, black 60%);
-      --natsumi-colors-tertiary: color-mix(in srgb, var(--natsumi-primary-color) 15%, black 85%);
-      --natsumi-colors-primary-foreground: color-mix(in srgb, var(--natsumi-primary-color) 80%, white 20%);
+        @media (-moz-bool-pref: "zen.theme.color-prefs.colorful") {
+            --natsumi-colors-primary: color-mix(
+                in srgb,
+                var(--natsumi-primary-color) 50%,
+                black 50%
+            );
+            --natsumi-colors-secondary: color-mix(
+                in srgb,
+                var(--natsumi-primary-color) 40%,
+                black 60%
+            );
+            --natsumi-colors-tertiary: color-mix(
+                in srgb,
+                var(--natsumi-primary-color) 15%,
+                black 85%
+            );
+            --natsumi-colors-primary-foreground: color-mix(
+                in srgb,
+                var(--natsumi-primary-color) 80%,
+                white 20%
+            );
+        }
     }
-  }
 
-  /* Glass effect */
-  --natsumi-glass-background: color-mix(in srgb, var(--natsumi-colors-secondary) 75%, transparent);
-  --natsumi-glass-blur-radius: var(--glass-blur-radius, 10px);
-  --natsumi-glass-shadow-size: var(--glass-shadow-size, 10px);
-  --natsumi-glass-shadow-opacity: var(--glass-shadow-opacity, 75%);
-  --natsumi-glass-shadow-color: color-mix(in srgb, var(--natsumi-colors-secondary) var(--natsumi-glass-shadow-opacity), black);
+    /* Glass effect */
+    --natsumi-glass-background: color-mix(
+        in srgb,
+        var(--natsumi-colors-secondary) 75%,
+        transparent
+    );
+    --natsumi-glass-blur-radius: var(--glass-blur-radius, 10px);
+    --natsumi-glass-shadow-size: var(--glass-shadow-size, 10px);
+    --natsumi-glass-shadow-opacity: var(--glass-shadow-opacity, 75%);
+    --natsumi-glass-shadow-color: color-mix(
+        in srgb,
+        var(--natsumi-colors-secondary) var(--natsumi-glass-shadow-opacity),
+        black
+    );
 
-  @media (prefers-color-scheme: dark) {
-    --natsumi-glass-shadow-color: color-mix(in srgb, var(--natsumi-colors-secondary) var(--natsumi-glass-shadow-opacity), white);
+    @media (prefers-color-scheme: dark) {
+        --natsumi-glass-shadow-color: color-mix(
+            in srgb,
+            var(--natsumi-colors-secondary) var(--natsumi-glass-shadow-opacity),
+            white
+        );
 
-    @media (-moz-bool-pref: "natsumi.theme.force-dark-shadows") {
-      --natsumi-glass-shadow-color: color-mix(in srgb, var(--natsumi-colors-secondary) var(--natsumi-glass-shadow-opacity), black);
+        @media (-moz-bool-pref: "natsumi.theme.force-dark-shadows") {
+            --natsumi-glass-shadow-color: color-mix(
+                in srgb,
+                var(--natsumi-colors-secondary)
+                    var(--natsumi-glass-shadow-opacity),
+                black
+            );
+        }
     }
-  }
 
-  /* pdf.js */
-  --natsumi-pdfjs-topbar-max-width: var(--pdfjs-topbar-max-width, 750px);
+    /* pdf.js */
+    --natsumi-pdfjs-topbar-max-width: var(--pdfjs-topbar-max-width, 750px);
 
-  /* FF home */
-  --natsumi-home-bg: var(--home-background-url, none);
+    /* FF home */
+    --natsumi-home-bg: var(--home-background-url, none);
 }
