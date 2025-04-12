@@ -1,0 +1,13 @@
+[manifest]
+version = "1.0.0"
+dump_lua = true
+priority = 1
+
+# Disable calling collection_loc_vars when variables are specified manually
+[[patches]]
+[patches.pattern]
+target = "functions/UI_definitions.lua"
+pattern = "if blind.collection_loc_vars and type(blind.collection_loc_vars) == 'function' then"
+position = "at"
+payload = "if not vars and blind.collection_loc_vars and type(blind.collection_loc_vars) == 'function' then"
+match_indent = true

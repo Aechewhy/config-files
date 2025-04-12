@@ -1,0 +1,1 @@
+Start-Process kanata -WindowStyle Hidden

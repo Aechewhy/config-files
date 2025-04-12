@@ -1,0 +1,13 @@
+{
+    "id": "jimbos_metrics",
+    "name": "Jimbo's Metrics",
+    "author": ["CraftedCart"],
+    "description": "Graph your hands!",
+    "prefix": "jimbos_metrics",
+    "main_file": "src/main.lua",
+    "priority": 0,
+    "version": "0.1.0",
+    "dependencies": [
+        "Steamodded (>=1.*)"
+    ]
+}

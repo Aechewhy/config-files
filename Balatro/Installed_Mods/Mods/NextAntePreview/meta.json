@@ -1,0 +1,22 @@
+{
+    "id": "AntePreview",
+    "name": "Next Ante Preview",
+    "author": [
+        "DigitalDetective47"
+    ],
+    "description": "Shows a preview of the next ante on the Boss Blind's cash out screen.",
+    "prefix": "nap",
+    "main_file": "main.lua",
+    "version": "3.0.0",
+    "priority": -1e6,
+    "dependencies": [
+        "Steamodded (>=1.0.0~ALPHA-1021a)"
+    ],
+    "conflicts": [
+        "Cryptid (<<0.5.5a~dev)",
+        "Multiplayer (<<0.2.1)",
+        "ortalab",
+        "StrangeLib (<<2.1.2)",
+        "VirtualizedMultiplayer"
+    ]
+}

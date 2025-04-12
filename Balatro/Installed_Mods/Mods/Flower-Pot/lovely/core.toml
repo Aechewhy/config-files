@@ -1,0 +1,24 @@
+[manifest]
+version = "1.0.0"
+dump_lua = true
+priority = 0
+
+[[patches]]
+[patches.module]
+source = "libs/nativefs.lua"
+before = "main.lua"
+name = "FP_nativefs"
+
+[[patches]]
+[patches.module]
+source = "libs/json.lua"
+before = "main.lua"
+name = "FP_json"
+
+[[patches]]
+[patches.copy]
+target = "main.lua"
+position = "append"
+sources = [
+	"core/core.lua",
+]

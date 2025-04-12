@@ -1,0 +1,38 @@
+[manifest]
+version = "1.0.0"
+dump_lua = true
+priority = 0
+
+[[patches]]
+[patches.pattern]
+target = "functions/common_events.lua"
+pattern = '''if first_pass and not (_c.set == 'Edition') and badges then'''
+position = "before"
+payload = '''
+if FlowerPot.rev_lookup_records[_c.key] and FlowerPot.CONFIG.stat_tooltips_enabled then
+    local card_progress = G.PROFILES[G.SETTINGS.profile].joker_usage[_c.key] or {}
+    
+    -- Only really matters for SMODS
+    if card then
+        local value = FlowerPot.rev_lookup_records[_c.key]:check_record(card)
+        local function is_inf(x) return x ~= x end
+        if value and to_big(value) ~= math.huge and is_inf(to_big(value)) == false then
+            FlowerPot.update_record(_c.key, FlowerPot.rev_lookup_records[_c.key].key, value)
+        end
+    end
+
+    FlowerPot.rev_lookup_records[_c.key]:add_tooltips(info_queue, card_progress, card)
+end
+'''
+match_indent = true
+
+[[patches]]
+[patches.pattern]
+target = "card.lua"
+pattern = '''if self.ability.name == 'Space Joker' and pseudorandom('space') < G.GAME.probabilities.normal/self.ability.extra then'''
+position = "after"
+payload = '''
+    G.GAME.FLOWPOT = G.GAME.FLOWPOT or {}
+    G.GAME.FLOWPOT.space_joker_levels = (G.GAME.FLOWPOT.space_joker_levels or 0) + 1
+'''
+match_indent = true
