@@ -8,15 +8,20 @@ map A scrollLeft
 map D scrollRight
 map w scrollUp
 map s scrollDown
-map q scrollPxUp count=720 wait=300 
-map e scrollPxDown count=720 wait=300 
+map q scrollFullPageUp 
+map e scrollFullPageDown
 map Q scrollToTop
 map E scrollToBottom
 map a goBack
-run <c-s-a> A reuse="newFg"
+run <a-c-s-a> A reuse="newFg"
 map d goForward
 map { goPrevious
 map } goNext
+
+map j scrollPxUp
+map k scrollPxDown 
+map J scrollPxLeft
+map K scrollPxRight 
 
 map Rr goUp
 map RR goToRoot
