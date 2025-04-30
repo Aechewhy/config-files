@@ -9,6 +9,8 @@
 [manager]
 #################################################################################################################
 prepend_keymap = [
+#Confirm quit
+	{on = "q", run = "plugin confirm-quit", desc = "Confirm before quitting if multiple tabs are open"},
 #Command Prompt
     { on = [ ".", "p" ], run = "plugin command", desc = "Yazi command prompt" },
 

@@ -1,0 +1,62 @@
+!F2:: Reload
+#Requires AutoHotkey v2.0
+
+; ─── Dot + 1 combo ────────────────────────────────────────────────────────
+~`; & `:: {
+    if WinExist("ahk_exe" "WindowsTerminal.exe") {
+        WinActivate
+        WinShow
+    } else {
+        Run "WindowsTerminal.exe"
+    }
+}
+~`; & f:: {
+    if WinExist("ahk_exe " "zen.exe") {
+        WinShow
+        WinActivate
+    } else {
+        Run "zen.exe"
+    }
+}
+~`; & a:: {
+    if WinExist("ahk_exe " "code.exe") {
+        WinActivate
+        WinShow
+    } else {
+        Run "C:\Users\LENOVO LEGION\AppData\Local\Programs\Microsoft VS Code\Code.exe"
+    }
+}
+~`; & d:: {
+    if WinExist("ahk_exe " "Caprine.exe") {
+        WinActivate
+        WinShow
+    } else {
+        Run "C:\Users\LENOVO LEGION\AppData\Local\Programs\Caprine\Caprine.exe"
+    }
+}
+~`; & s:: {
+    if WinExist("ahk_exe " "zalo.exe") {
+        WinActivate
+        WinShow
+    } else {
+        Run "C:\Users\LENOVO LEGION\AppData\Local\Programs\Zalo\Zalo.exe"
+    }
+}
+~`; & e:: {
+    if WinExist("ahk_exe " "msedge.exe") {
+        WinActivate
+        WinShow
+    } else {
+        Run "msedge.exe"
+    }
+}
+~`; & w:: {
+    if WinExist("ahk_exe " "brave.exe") {
+        WinActivate
+        WinShow
+    } else {
+        Run "brave.exe"
+    }
+}
+; The `~.` prefix means “allow . to send itself,” even though it’s being used
+; as a combo prefix.
