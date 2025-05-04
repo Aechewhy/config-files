@@ -1,16 +1,76 @@
-!F2:: Reload
+!F5:: Reload
 #Requires AutoHotkey v2.0
 
 ; ─── Dot + 1 combo ────────────────────────────────────────────────────────
-~`; & `:: {
+; ~`; & `:: {
+;     if WinExist("ahk_exe" "WindowsTerminal.exe") {
+;         WinActivate
+;         WinShow
+;     } else {
+;         Run "wt.exe"
+;     }
+; }
+; ~`; & f:: {
+;     if WinExist("ahk_exe " "zen.exe") {
+;         WinShow
+;         WinActivate
+;     } else {
+;         Run "zen.exe"
+;     }
+; }
+; ~`; & a:: {
+;     if WinExist("ahk_exe " "code.exe") {
+;         WinActivate
+;         WinShow
+;     } else {
+;         Run "C:\Users\LENOVO LEGION\AppData\Local\Programs\Microsoft VS Code\Code.exe"
+;     }
+; }
+; ~`; & d:: {
+;     if WinExist("ahk_exe " "Caprine.exe") {
+;         WinActivate
+;         WinShow
+;     } else {
+;         Run "C:\Users\LENOVO LEGION\AppData\Local\Programs\Caprine\Caprine.exe"
+;     }
+; }
+; ~`; & s:: {
+;     if WinExist("ahk_exe " "zalo.exe") {
+;         WinActivate
+;         WinShow
+;     } else {
+;         Run "C:\Users\LENOVO LEGION\AppData\Local\Programs\Zalo\Zalo.exe"
+;     }
+; }
+; ~`; & e:: {
+;     if WinExist("ahk_exe " "msedge.exe") {
+;         WinActivate
+;         WinShow
+;     } else {
+;         Run "msedge.exe"
+;     }
+; }
+; ~`; & w:: {
+;     if WinExist("ahk_exe " "brave.exe") {
+;         WinActivate
+;         WinShow
+;     } else {
+;         Run "brave.exe"
+;     }
+; }
+; The `~.` prefix means “allow . to send itself,” even though it’s being used
+; as a combo prefix.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;Alternative
+RAlt & `:: {
     if WinExist("ahk_exe" "WindowsTerminal.exe") {
         WinActivate
         WinShow
     } else {
-        Run "WindowsTerminal.exe"
+        Run "wt.exe"
     }
 }
-~`; & f:: {
+RAlt & f:: {
     if WinExist("ahk_exe " "zen.exe") {
         WinShow
         WinActivate
@@ -18,7 +78,7 @@
         Run "zen.exe"
     }
 }
-~`; & a:: {
+RAlt & a:: {
     if WinExist("ahk_exe " "code.exe") {
         WinActivate
         WinShow
@@ -26,7 +86,7 @@
         Run "C:\Users\LENOVO LEGION\AppData\Local\Programs\Microsoft VS Code\Code.exe"
     }
 }
-~`; & d:: {
+RAlt & d:: {
     if WinExist("ahk_exe " "Caprine.exe") {
         WinActivate
         WinShow
@@ -34,7 +94,7 @@
         Run "C:\Users\LENOVO LEGION\AppData\Local\Programs\Caprine\Caprine.exe"
     }
 }
-~`; & s:: {
+RAlt & s:: {
     if WinExist("ahk_exe " "zalo.exe") {
         WinActivate
         WinShow
@@ -42,7 +102,7 @@
         Run "C:\Users\LENOVO LEGION\AppData\Local\Programs\Zalo\Zalo.exe"
     }
 }
-~`; & e:: {
+RAlt & e:: {
     if WinExist("ahk_exe " "msedge.exe") {
         WinActivate
         WinShow
@@ -50,7 +110,7 @@
         Run "msedge.exe"
     }
 }
-~`; & w:: {
+RAlt & w:: {
     if WinExist("ahk_exe " "brave.exe") {
         WinActivate
         WinShow
@@ -58,5 +118,11 @@
         Run "brave.exe"
     }
 }
-; The `~.` prefix means “allow . to send itself,” even though it’s being used
-; as a combo prefix.
+RAlt & q:: {
+    if WinExist("ahk_exe " "notion.exe") {
+        WinActivate
+        WinShow
+    } else {
+        Run "C:\Users\LENOVO LEGION\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Notion.lnk"
+    }
+}
