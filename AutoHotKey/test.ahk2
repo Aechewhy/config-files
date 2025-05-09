@@ -1,0 +1,39 @@
+!F2:: Reload
+#Requires AutoHotkey v2.0
+
+; ─── CONFIG & STATE ─────────────────────────────────────────────────────────
+comboInterval := 200    ; max ms between presses
+lastPressed1 := 0
+lastPressed2 := 0
+
+; ─── HOTKEY: “1” ─────────────────────────────────────────────────────────────
+~1:: {
+    global lastPressed1, lastPressed2, comboInterval
+    now := A_TickCount
+    if (now - lastPressed2 <= comboInterval) {
+        lastPressed2 := 0
+        lastPressed1 := 0
+        ComboAction()
+        return
+    }
+    lastPressed1 := now
+}
+
+; ─── HOTKEY: “2” ─────────────────────────────────────────────────────────────
+~2:: {
+    global lastPressed1, lastPressed2, comboInterval
+    now := A_TickCount
+    if (now - lastPressed1 <= comboInterval) {
+        lastPressed1 := 0
+        lastPressed2 := 0
+        ComboAction()
+        return
+    }
+    lastPressed2 := now
+}
+
+; ─── YOUR COMBO ACTION ───────────────────────────────────────────────────────
+ComboAction() {
+    ; This runs when 1+2 are pressed within comboInterval
+    MsgBox "1 + 2 combo triggered!"
+}

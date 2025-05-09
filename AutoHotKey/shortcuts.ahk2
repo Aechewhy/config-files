@@ -58,11 +58,77 @@
 ;         Run "brave.exe"
 ;     }
 ; }
-; The `~.` prefix means “allow . to send itself,” even though it’s being used
+; The`~.`prefix means “allow . to send itself, ” even though it’s being used
 ; as a combo prefix.
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;Alternative
-RAlt & `:: {
+; ;Alternative
+; RAlt & `:: {
+;     if WinExist("ahk_exe" "WindowsTerminal.exe") {
+;         WinActivate
+;         WinShow
+;     } else {
+;         Run "wt.exe"
+;     }
+; }
+; RAlt & f:: {
+;     if WinExist("ahk_exe " "zen.exe") {
+;         WinShow
+;         WinActivate
+;     } else {
+;         Run "zen.exe"
+;     }
+; }
+; RAlt & a:: {
+;     if WinExist("ahk_exe " "code.exe") {
+;         WinActivate
+;         WinShow
+;     } else {
+;         Run "C:\Users\LENOVO LEGION\AppData\Local\Programs\Microsoft VS Code\Code.exe"
+;     }
+; }
+; RAlt & d:: {
+;     if WinExist("ahk_exe " "Caprine.exe") {
+;         WinActivate
+;         WinShow
+;     } else {
+;         Run "C:\Users\LENOVO LEGION\AppData\Local\Programs\Caprine\Caprine.exe"
+;     }
+; }
+; RAlt & s:: {
+;     if WinExist("ahk_exe " "zalo.exe") {
+;         WinActivate
+;         WinShow
+;     } else {
+;         Run "C:\Users\LENOVO LEGION\AppData\Local\Programs\Zalo\Zalo.exe"
+;     }
+; }
+; RAlt & e:: {
+;     if WinExist("ahk_exe " "msedge.exe") {
+;         WinActivate
+;         WinShow
+;     } else {
+;         Run "msedge.exe"
+;     }
+; }
+; RAlt & w:: {
+;     if WinExist("ahk_exe " "brave.exe") {
+;         WinActivate
+;         WinShow
+;     } else {
+;         Run "brave.exe"
+;     }
+; }
+; RAlt & q:: {
+;     if WinExist("ahk_exe " "notion.exe") {
+;         WinActivate
+;         WinShow
+;     } else {
+;         Run "C:\Users\LENOVO LEGION\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Notion.lnk"
+;     }
+; }
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+~Space & `:: {
     if WinExist("ahk_exe" "WindowsTerminal.exe") {
         WinActivate
         WinShow
@@ -70,7 +136,7 @@ RAlt & `:: {
         Run "wt.exe"
     }
 }
-RAlt & f:: {
+~Space & f:: {
     if WinExist("ahk_exe " "zen.exe") {
         WinShow
         WinActivate
@@ -78,7 +144,7 @@ RAlt & f:: {
         Run "zen.exe"
     }
 }
-RAlt & a:: {
+~Space & a:: {
     if WinExist("ahk_exe " "code.exe") {
         WinActivate
         WinShow
@@ -86,7 +152,7 @@ RAlt & a:: {
         Run "C:\Users\LENOVO LEGION\AppData\Local\Programs\Microsoft VS Code\Code.exe"
     }
 }
-RAlt & d:: {
+~Space & d:: {
     if WinExist("ahk_exe " "Caprine.exe") {
         WinActivate
         WinShow
@@ -94,7 +160,7 @@ RAlt & d:: {
         Run "C:\Users\LENOVO LEGION\AppData\Local\Programs\Caprine\Caprine.exe"
     }
 }
-RAlt & s:: {
+~Space & s:: {
     if WinExist("ahk_exe " "zalo.exe") {
         WinActivate
         WinShow
@@ -102,7 +168,7 @@ RAlt & s:: {
         Run "C:\Users\LENOVO LEGION\AppData\Local\Programs\Zalo\Zalo.exe"
     }
 }
-RAlt & e:: {
+~Space & e:: {
     if WinExist("ahk_exe " "msedge.exe") {
         WinActivate
         WinShow
@@ -110,19 +176,11 @@ RAlt & e:: {
         Run "msedge.exe"
     }
 }
-RAlt & w:: {
+~Space & w:: {
     if WinExist("ahk_exe " "brave.exe") {
         WinActivate
         WinShow
     } else {
         Run "brave.exe"
-    }
-}
-RAlt & q:: {
-    if WinExist("ahk_exe " "notion.exe") {
-        WinActivate
-        WinShow
-    } else {
-        Run "C:\Users\LENOVO LEGION\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Notion.lnk"
     }
 }
