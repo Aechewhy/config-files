@@ -1,27 +1,7 @@
 # A TOML linter such as https://taplo.tamasfe.dev/ can use this schema to validate your config.
 # If you encounter any issues, please make an issue at https://github.com/yazi-rs/schemas.
 "$schema" = "https://yazi-rs.github.io/schemas/yazi.json"
-### Plugins
-# mime
-[[plugin.prepend_fetchers]]
-id   = "mime"
-if   = "!mime"
-name = "*"
-run  = "mime-ext"
-prio = "high"
 
-# git
-[[plugin.prepend_fetchers]]
-id   = "git"
-name = "*"
-run  = "git"
-
-[[plugin.prepend_fetchers]]
-id   = "git"
-name = "*/"
-run  = "git"
-
-### 
 [manager]
 ratio          = [ 1, 4, 3 ]
 sort_by        = "alphabetical"
@@ -29,7 +9,7 @@ sort_sensitive = false
 sort_reverse 	 = false
 sort_dir_first = true
 sort_translit  = false
-linemode       = "none"
+linemode       = "size"
 show_hidden    = true
 show_symlink   = true
 scrolloff      = 5
@@ -68,11 +48,11 @@ reveal = [
 ]
 extract = [
 	{ run = 'ya pub extract --list "$@"', desc = "Extract here", for = "unix" },
-	{ run = 'ya pub extract --list %*',   desc = "Extract here", for = "windows" },
+	{ run = 'ouch d -y "%*"', desc = "Extract here with ouch", for = "windows" },
 ]
 play = [
 	{ run = 'mpv --force-window "$@"', orphan = true, for = "unix" },
-	{ run = 'mpv --force-window %*', orphan = true, for = "windows" },
+	{ run = 'vlc %*', desc = "Play with VLC", orphan = true, for = "windows" },
 	{ run = '''mediainfo "$1"; echo "Press enter to exit"; read _''', block = true, desc = "Show media info", for = "unix" },
 ]
 
@@ -106,8 +86,19 @@ image_alloc      = 536870912  # 512MB
 image_bound      = [ 0, 0 ]
 suppress_preload = false
 
+
+
 [plugin]
 
+prepend_fetchers = [
+	{ id = "mime", if = "!mime", name = "*", run = "mime-ext", prio = "high" },
+    { id = "git", name = "*", run = "git" },
+    { id = "git", name = "*/", run = "git" },
+    #{ id = "simple-tag", name = "*", run = "simple-tag" },
+    #{ id = "simple-tag", name = "*/", run = "simple-tag" },
+    #{ id = "simple-tag", name = "*", run = "simple-tag" },
+    #{ id = "simple-tag", name = "*/", run = "simple-tag" },
+]
 fetchers = [
 	# Mimetype
 	{ id = "mime", name = "*", run = "mime", if = "!mime", prio = "high" },
@@ -149,21 +140,29 @@ previewers = [
 	# Fallback
 	{ name = "*", run = "file" },
 ]
+
 prepend_previewers = [
-	{ mime = "video/*", run = "video-ffmpeg" },
-	# Archive previewer
-	#{ mime = "application/*zip",            run = "ouch" },
-	#{ mime = "application/x-tar",           run = "ouch" },
-	#{ mime = "application/x-bzip2",         run = "ouch" },
-	#{ mime = "application/x-7z-compressed", run = "ouch" },
-	#{ mime = "application/x-rar",           run = "ouch" },
-	#{ mime = "application/x-xz",            run = "ouch" },
-	#{ name = "*/", run = "eza-preview" }, #For tree viewer
-    { mime = "text/csv", run = "miller"},
-	{ name = "*.md", run = "glow" }, #for markdown preview
+	#Mediainfo
+	{ mime = "{audio,video,image}/*", run = "mediainfo"},
+	{ mime = "application/subrip", run = "mediainfo" },	
+
+	{ mime = "application/*zip",            run = "ouch" },
+	{ mime = "application/x-tar",           run = "ouch" },
+	{ mime = "application/x-bzip2",         run = "ouch" },
+	{ mime = "application/x-7z-compressed", run = "ouch" },
+	{ mime = "application/x-rar",           run = "ouch" },
+	{ mime = "application/x-xz",            run = "ouch" },
+	
+	#Rich
+	{ name = "*.csv", run = "rich-preview"}, # for csv files
+    { name = "*.md", run = "rich-preview" }, # for markdown (.md) files
+    { name = "*.rst", run = "rich-preview"}, # for restructured text (.rst) files
+    { name = "*.ipynb", run = "rich-preview"}, # for jupyter notebooks (.ipynb)
+    { name = "*.json", run = "rich-preview"}, # for json (.json) files
 ]
 prepend_preloaders = [
-	{ mime = "video/*", run = "video-ffmpeg" },
+	{ mime = "{audio,video,image}/*", run = "mediainfo" },
+    { mime = "application/subrip", run = "mediainfo" },
 ]
 
 [input]

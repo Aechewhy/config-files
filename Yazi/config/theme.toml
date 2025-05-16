@@ -4,11 +4,11 @@
 
 # vim:fileencoding=utf-8:foldmethod=marker
 
-# : Flavor {{{
+# : Flavor 
 
 [flavor]
-dark = "sunset"
-# : }}}
+#dark = "vscode-dark-modern"
+# : 
 
 # : Manager {{{
 
@@ -44,7 +44,7 @@ border_symbol = "│"
 border_style  = { fg = "gray" }
 
 # Highlighting
-syntect_theme = ""
+syntect_theme = "<name>.tmTheme"
 
 # : }}}
 
