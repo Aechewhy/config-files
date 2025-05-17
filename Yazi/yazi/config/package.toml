@@ -133,5 +133,10 @@ use = "boydaihungst/simple-tag"
 rev = "33e5cdf"
 hash = "9d55f611c6c78e8a4c6405e543482be5"
 
+[[plugin.deps]]
+use = "Sonico98/exifaudio"
+rev = "7ff7141"
+hash = "a8a231635d7411de2a777b2005037a96"
+
 [flavor]
 deps = []

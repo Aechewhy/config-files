@@ -32,7 +32,8 @@ ueberzug_offset = [ 0, 0, 0, 0 ]
 [opener]
 edit = [
 	{ run = '${EDITOR:-vi} "$@"', desc = "$EDITOR", block = true, for = "unix" },
-	{ run = 'code %*',    orphan = true, desc = "code",           for = "windows" },
+  # { run = 'code %*',    orphan = true, desc = "code",           for = "windows" },
+  { run = 'nvim %*',    block = true, desc = "code",           for = "windows" },
 	{ run = 'code -w %*', block = true,  desc = "code (block)",   for = "windows" },
 ]
 open = [
@@ -76,6 +77,16 @@ rules = [
 	{ mime = "inode/x-empty", use = [ "edit", "reveal" ] },
 	# Fallback
 	{ name = "*", use = [ "open", "reveal" ] },
+  {name = "*.txt", use = ["edit", "open", "reveal"]},
+  {name = "*.json", use = ["edit", "open", "reveal"]},
+  { name = "*.md",   use = [ "edit", "open", "reveal"] },
+  { name = "*.lua",  use = [ "edit", "open", "reveal"] },
+  { name = "*.js",   use = [ "edit", "open", "reveal"] },
+  { name = "*.ts",   use = [ "edit", "open", "reveal"] },
+  { name = "*.html", use = [ "edit", "open", "reveal"] },
+  { name = "*.css",  use = [ "edit", "open", "reveal"] },
+  { name = "*.md",   use = [ "edit", "open", "reveal"] },
+  { name = "*.py",   use = [ "edit", "open", "reveal"] },
 ]
 
 [tasks]
@@ -145,7 +156,7 @@ prepend_previewers = [
 	#Mediainfo
 	{ mime = "{audio,video,image}/*", run = "mediainfo"},
 	{ mime = "application/subrip", run = "mediainfo" },	
-
+ 	{ mime = "audio/*",   run = "exifaudio"},
 	{ mime = "application/*zip",            run = "ouch" },
 	{ mime = "application/x-tar",           run = "ouch" },
 	{ mime = "application/x-bzip2",         run = "ouch" },
