@@ -415,19 +415,22 @@ keymap = [
 # Goto
 	{ on = [ "g", "g" ], run = "arrow -99999999", desc = "Move cursor to the top" },
 	{ on = "G",          run = "arrow 99999999",  desc = "Move cursor to the bottom" },
+  #Directories
 	{ on = [ "g", "c" ],       run = "cd C:",     desc = "Go to the C: drive" },
-	{ on = [ "g", "u" ],       run = "shell --orphan -- 'z \\wsl.localhost/Ubuntu-24.04'",     desc = "Go to WSL" },
+	{ on = [ "g", "a" ],       run = "shell --block -- 'z \\wsl.localhost/Ubuntu-24.04'",     desc = "Go to WSL" },
 	{ on = [ "g", "d" ],       run = "cd ~/Downloads",   desc = "Go to the downloads directory" },
+	{ on = [ "g", "D" ],       run = "cd C:/Users/LENOVO~1/ONEDRI~1/Documents", desc = "Go to the Documents"},
 	{ on = [ "g", "h" ],       run = "cd ~",             desc = "Go to the home directory" },
 	{ on = [ "g", "o" ],       run = "cd C:/Users/LENOVO~1/ONEDRI~1", desc = "Go to the OneDrive"},
 	{ on = [ "g", "p" ],       run = "cd C:/Users/LENOVO~1/ONEDRI~1/Pictures", desc = "Go to the Pictures"},
-	{ on = [ "g", "D" ],       run = "cd C:/Users/LENOVO~1/ONEDRI~1/Documents", desc = "Go to the Documents"},
 	{ on = [ "g", "s" ],       run = "cd C:/Users/LENOVO~1/ONEDRI~1/Study_Materials", desc = "Go to the study materials"},
+	{ on = [ "g", "S" ],       run = "cd C:/Users/LENOVO~1/Repositories/config-files/", desc = "Go to config-files"},
+	{ on = [ "g", "r" ],       run = "cd C:/Users/LENOVO~1/Repositories/", desc = "Go to Repositories"},
+	{ on = [ "g", "y" ],       run = "cd C:/Users/LENOVO~1/AppData/Roaming/yazi/", desc = "Go to yazi folders"},
 	{ on = [ "g", "<Space>" ], run = "cd --interactive", desc = "Go to a directory interactively" },
 
 # Tabs
 	{ on = ["t","t"], run = "tab_create --current", desc = "Create a new tab with CWD" },
-
 	{ on = ["t","1"], run = "tab_switch 0", desc = "Switch to the first tab" },
 	{ on = ["t","2"], run = "tab_switch 1", desc = "Switch to the second tab" },
 	{ on = ["t","3"], run = "tab_switch 2", desc = "Switch to the third tab" },

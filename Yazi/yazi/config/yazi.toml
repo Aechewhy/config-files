@@ -87,6 +87,8 @@ rules = [
   { name = "*.css",  use = [ "edit", "open", "reveal"] },
   { name = "*.md",   use = [ "edit", "open", "reveal"] },
   { name = "*.py",   use = [ "edit", "open", "reveal"] },
+  { name = "*.ahk",   use = [ "edit", "open", "reveal"] },
+  { name = "*.ahk2",   use = [ "edit", "open", "reveal"] },
 ]
 
 [tasks]
