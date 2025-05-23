@@ -7,16 +7,19 @@ Function ... {
     Set-Location ..
     Set-Location ..
 }
+#exit
+Invoke-Expression "function q { exit }"
+Invoke-Expression "function quit { exit }"
 ###
 #$PROFILE
 ###
-function edipro{code $PROFILE}
-function relpro{.$PROFILE}
+function epro{code $PROFILE}
+function rpro{.$PROFILE}
 ###
 #EZA
 ###
 Set-Alias -Name l -Value eza
-Function ll {eza -l --color=always --icons=always}
+Function ll {eza -la --color=always --icons=always}
 Function lt {eza -T}
 Function la {eza -a}
 ### 
@@ -36,3 +39,16 @@ function y {
 ###
 Set-Alias -Name g -Value git
 Set-Alias -Name lgit -Value lazygit
+###
+#PsFzf
+###
+Function fscoop{Invoke-FuzzyScoop}
+Function fk{Invoke-FuzzyKillProcess}
+Function fh{Invoke-FuzzyHistory}
+Function fg{Invoke-PsFzfRipgrep}
+Function fe{Invoke-FuzzyEdit}
+Function fcd{Invoke-FuzzySetLocation}
+###For short
+Set-Alias -Name yt -Value yt-dlp
+Set-Alias -Name n -Value nvim
+Set-Alias -Name c -Value code
