@@ -84,13 +84,16 @@
     "files.defaultLanguage": "",
     "git.autofetch": true,
     "git.openRepositoryInParentFolders": "always",
-    "glassit.alpha": 255,
+    //INDENT-RAINBOW
     "indentRainbow.colors": [
         "rgba(255,0,255,0.15)", // Purple
         "rgba(0,255,0,0.15)", // Red
         "rgba(0,0,255,0.15)" // Green
     ],
-    "indentRainbow.errorColor": "rgba(255,0,0,0.6)",
+    "indentRainbow.errorColor": "rgba(255,0,0,1)",
+    "indentRainbow.indicatorStyle": "light",
+    "indentRainbow.lightIndicatorStyleLineWidth": 3,
+
     "latex-workshop.latex.autoBuild.run": "onSave",
     "latex-workshop.latex.recipes": [
         {
@@ -164,29 +167,29 @@
         "file:///C:/Users/LENOVO%20LEGION/Repositories/config-files/Vscode/vscode_custom.css"
     ],
     "window.closeWhenEmpty": true,
-    "window.commandCenter": false,
     "window.density.editorTabHeight": "compact",
     "window.enableMenuBarMnemonics": false,
     "workbench.activityBar.location": "top",
-    "workbench.colorTheme": "Vim Deep Dark",
+    "workbench.colorTheme": "GitHub Dark Default",
     "workbench.editor.editorActionsLocation": "titleBar",
     "workbench.editorAssociations": {
         "*.dat": "default",
         "*.pdf": "latex-workshop-pdf-hook"
     },
-    "workbench.layoutControl.enabled": false,
     "workbench.navigationControl.enabled": false,
     "workbench.settings.openDefaultKeybindings": true,
     "workbench.startupEditor": "none",
     "workbench.view.alwaysShowHeaderActions": true,
-    "window.menuBarVisibility": "compact",
     "editor.minimap.enabled": false,
+    "files.associations": {
+        "*.hbs": "html"
+    },
     ///VIM
     "vim.useSystemClipboard": true,
     "vim.visualstar": true,
     "vim.highlightedyank.enable": true,
     "vim.hlsearch": true,
-    "vim.sneak": true, // Better "f"
+    "vim.sneak": false, // Better "f"
     "vim.camelCaseMotion.enable": true,
     "vim.surround": true, //work with brackets around text
     "vim.easymotion": true, //Vim in Vim
@@ -202,7 +205,7 @@
     "vim.insertModeKeyBindings": [
         {
             "before": ["j", "j"],
-            "after": ["<Esc>"]
+            "a": ["<Esc>"]
         },
         {
             "before": ["k", "k"],
@@ -223,40 +226,24 @@
             "after": ["workbench.action.files.newUntitledFile"]
         },
         {
-            "before": ["F"],
-            "after": ["S"]
-        },
-        {
-            "before": ["f"],
-            "after": ["s"]
-        },
-        {
             "before": ["<Esc>"],
-            "commands": [":noh"]
+            "commands": [":nohl"]
         },
         {
             "before": ["<C-h>"],
             "commands": ["editor.action.startFindReplaceAction"]
         },
         {
-            "before": ["<C-j>"],
-            "commands": ["workbench.action.togglePanel"]
-        },
-        {
-            "before": ["<leader>", "b"],
-            "commands": ["workbench.action.toggleSidebarVisibility"]
-        },
-        {
-            "before": ["<leader>", "B"],
-            "commands": ["workbench.action.toggleAuxiliarybar"]
-        },
-        {
-            "before": ["<C-Space>", "w"],
-            "commands": ["workbench.action.closeActiveEditor"]
-        },
-        {
             "before": ["<leader>", "e"],
             "commands": ["workbench.view.explorer"]
+        },
+        {
+            "before": ["<leader>", "k"],
+            "after": ["<leader>", "<leader>", "k"]
+        },
+        {
+            "before": ["<leader>", "j"],
+            "after": ["<leader>", "<leader>", "j"]
         },
         {
             "before": ["<leader>", "l"],
@@ -267,14 +254,6 @@
             "commands": ["workbench.action.previousEditor"]
         },
         {
-            "before": ["<C-Space>", "k"],
-            "after": ["V", "y", "P"]
-        },
-        {
-            "before": ["<C-Space>", "j"],
-            "after": ["V", "y", "p"]
-        },
-        {
             "before": ["<leader>", "m"],
             "commands": [":marks"]
         },
@@ -283,20 +262,49 @@
             "after": ["<leader>", "<leader>", "s"]
         },
         {
-            "before": ["<C-Space>", "a"],
-            "commands": ["editor.action.selectAll"]
-        },
-        {
-            "before": ["<leader>", "r"],
-            "commands": [":redo"]
-        },
-        {
             "before": ["<leader>", "_"],
             "commands": ["workbench.action.splitEditorDown"]
         },
         {
             "before": ["<leader>", "|"],
             "commands": ["workbench.action.splitEditorRight"]
+        },
+        {
+            "before": ["<C-Space>", "j"],
+            "commands": ["editor.action.copyLinesDownAction"]
+        },
+        {
+            "before": ["<C-Space>", "k"],
+            "commands": ["editor.action.copyLinesUpAction"]
+        },
+        {
+            "before": ["<C-Space>", "b"],
+            "commands": ["workbench.action.toggleSidebarVisibility"]
+        },
+        {
+            "before": ["<C-Space>", "<C-b>"],
+            "commands": ["workbench.action.toggleAuxiliarybar"]
+        },
+        {
+            "before": ["<C-Space>", "w"],
+            "commands": ["workbench.action.closeActiveEditor"]
+        },
+
+        {
+            "before": ["<Leader>", "]"],
+            "commands": ["editor.action.moveLinesDownAction"]
+        },
+        {
+            "before": ["<Leader>", "["],
+            "commands": ["editor.action.moveLinesUpAction"]
+        },
+        {
+            "before": ["<C-Space>", "c"],
+            "after": ["g", "g", "V", "G", "y"]
+        },
+        {
+            "before": ["<C-Space>", "a"],
+            "after": ["g", "g", "V", "G"]
         }
     ],
     "vim.normalModeKeyBindingsNonRecursive": [
@@ -305,7 +313,7 @@
             "after": ["<leader>", "<leader>", "w"]
         },
         {
-            "before": ["<leader>", "g"],
+            "before": ["f"],
             "after": ["<leader>", "<leader>", "<leader>", "j"]
         },
         {
@@ -319,6 +327,18 @@
         }
     ],
     "vim.visualModeKeyBindings": [
+        {
+            "before": ["<leader>", "k"],
+            "after": ["<leader>", "<leader>", "k"]
+        },
+        {
+            "before": ["<leader>", "j"],
+            "after": ["<leader>", "<leader>", "j"]
+        },
+        {
+            "before": ["f"],
+            "after": ["<leader>", "<leader>", "<leader>", "j"]
+        },
         {
             "before": ["<C-h>"],
             "commands": ["editor.action.startFindReplaceAction"]
@@ -345,7 +365,17 @@
             "before": ["H"],
             "after": ["^"]
         }
-    ]
+    ],
+    "diffEditor.hideUnchangedRegions.enabled": true,
+    "workbench.layoutControl.enabled": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "material-icon-theme.opacity": 1,
+    "diffEditor.renderSideBySide": true,
+    "window.menuBarVisibility": "compact",
+    "window.commandCenter": false,
+    "codesnap.boxShadow": "rgba(0, 0, 0, 0.0) 0px 0px 8px",
+    "codesnap.containerPadding": "2px",
+    "codesnap.shutterAction": "copy",
+    "codesnap.showWindowControls": false,
+    "security.allowedUNCHosts": ["wsl.localhost"]
 }
-
-// Duplicate a line down: V y P j

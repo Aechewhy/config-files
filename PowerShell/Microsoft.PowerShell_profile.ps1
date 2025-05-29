@@ -10,3 +10,7 @@ oh-my-posh init pwsh --config "C:\Users\LENOVO LEGION\OneDrive - Hanoi Universit
 . "$PSScriptRoot\Scripts\shellIntegration.ps1"
 #Zoxide initalization
 Invoke-Expression (& { (zoxide init powershell | Out-String) })
+function syml {
+    param($link, $target)
+    New-Item -ItemType SymbolicLink -Path $link -Target $target
+}

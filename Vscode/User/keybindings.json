@@ -242,7 +242,7 @@
         "when": "listFocus && listSupportsFind && !inputFocus"
     },
     {
-        "key": "c",
+        "key": "a",
         "command": "runCommands",
         "args": {
             "commands": [
@@ -251,12 +251,19 @@
                 "renameFile"
             ]
         },
-        "when": "listFocus&&!inputFocus"
+        "when": "listFocus && !inputFocus"
     },
     {
         "key": "ctrl+h",
         "command": "list.collapseAll",
         "when": "listFocus && !inputFocus && !treestickyScrollFocused"
+    },
+    {
+        "key": "ctrl+k ctrl+alt+f5",
+        "command": "runCommands",
+        "args": {
+            "commands": ["extension.updateCustomCSS", "reloadWindow"]
+        }
     },
     {
         "key": "h",
@@ -345,5 +352,126 @@
     {
         "key": "ctrl+alt+k",
         "command": "-code-runner.runCustomCommand"
+    },
+    {
+        "key": "ctrl+alt+2",
+        "command": "workbench.action.focusSecondSideEditor"
+    },
+    {
+        "key": "ctrl+shift+alt+j",
+        "command": "code-runner.runByLanguage"
+    },
+    {
+        "key": "ctrl+alt+j",
+        "command": "-code-runner.runByLanguage"
+    },
+    {
+        "key": "ctrl+alt+w",
+        "command": "workbench.action.closeOtherEditors"
+    },
+    {
+        "key": "ctrl+k ctrl+alt+w",
+        "command": "workbench.action.closeEditorsToTheLeft"
+    },
+    {
+        "key": "ctrl+k ctrl+shift+alt+w",
+        "command": "workbench.action.closeEditorsToTheRight"
+    },
+    {
+        "key": "ctrl+shift+alt+r",
+        "command": "workbench.action.files.revert"
+    },
+    {
+        "key": "ctrl+k shift+w",
+        "command": "workbench.action.revertAndCloseActiveEditor"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "search.focus.nextInputBox",
+        "when": "inSearchEditor && inputBoxFocus || inputBoxFocus && searchViewletVisible"
+    },
+    {
+        "key": "ctrl+f7",
+        "command": "workbench.action.togglePanel"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "-workbench.action.togglePanel"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "list.focusDown",
+        "when": "listFocus && !inputFocus && !treestickyScrollFocused"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "selectPrevSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "selectPrevCodeAction",
+        "when": "codeActionMenuVisible"
+    },
+    {
+        "key": "ctrl+alt+f",
+        "command": "-list.find",
+        "when": "listFocus && listSupportsFind"
+    },
+    {
+        "key": "alt+.",
+        "command": "workbench.action.nextEditor"
+    },
+    {
+        "key": "alt+,",
+        "command": "workbench.action.previousEditor"
+    },
+    {
+        "key": "c p",
+        "command": "copyFilePath",
+        "when": "listFocus && !editorFocus && !inputFocus"
+    },
+    {
+        "key": "ctrl+k ctrl+f6",
+        "command": "workbench.action.focusLastEditorGroup"
+    },
+    {
+        "key": "c shift+p",
+        "command": "copyRelativeFilePath",
+        "when": "listFocus && !editorFocus && !inputFocus"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "quickInput.previous",
+        "when": "inQuickInput && quickInputType == 'quickPick'"
+    },
+    {
+        "key": "ctrl+alt+,",
+        "command": "workbench.action.focusNextGroup"
+    },
+    {
+        "key": "ctrl+alt+.",
+        "command": "workbench.action.focusPreviousGroup"
+    },
+    {
+        "key": "shift+alt+,",
+        "command": "workbench.action.moveEditorLeftInGroup"
+    },
+    {
+        "key": "shift+alt+.",
+        "command": "workbench.action.moveEditorRightInGroup"
+    },
+    {
+        "key": "ctrl+k shift+d",
+        "command": "workbench.files.action.compareFileWith"
+    },
+    {
+        "key": "f8",
+        "command": "toggle.diff.renderSideBySide",
+        "when": "textCompareEditorActive"
+    },
+    {
+        "key": "ctrl+shift+alt+n",
+        "command": "explorer.newFolder"
     }
 ]
