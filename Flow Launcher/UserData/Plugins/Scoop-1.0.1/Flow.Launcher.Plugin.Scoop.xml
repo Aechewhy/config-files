@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Flow.Launcher.Plugin.Scoop</name>
+    </assembly>
+    <members>
+        <member name="T:Flow.Launcher.Plugin.Scoop.Entity.HotKeyType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Flow.Launcher.Plugin.Scoop.Views.SettingsControl">
+            <summary>
+            SettingsControl
+            </summary>
+        </member>
+        <member name="M:Flow.Launcher.Plugin.Scoop.Views.SettingsControl.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:ScoopInstance.IsVerbose">
+            <summary>
+            Checks if scoop-search should run in verbose mode.
+            </summary>
+        </member>
+        <member name="M:ScoopInstance.GetHomeDir">
+            <summary>
+            Gets the home directory of the current user.
+            </summary>
+        </member>
+        <member name="M:ScoopInstance.GetScoopConfigFilePath(System.String)">
+            <summary>
+            Path to the scoop config file.
+            </summary>
+        </member>
+        <member name="M:ScoopInstance.GetScoopHome(Flow.Launcher.Plugin.Scoop.Entity.Settings)">
+            <summary>
+            Returns the path to the root of scoop. Logic follows Scoop's logic for resolving the home directory.
+            </summary>
+        </member>
+        <member name="M:ScoopInstance.LoadInstance(Flow.Launcher.Plugin.Scoop.Entity.Settings)">
+            <summary>
+            Loads the Scoop instance, including home path, config file path, and icon.
+            </summary>
+        </member>
+        <member name="M:ScoopInstance.LoadIcon(System.String)">
+            <summary>
+            Loads the Scoop icon from the specified path.
+            </summary>
+        </member>
+    </members>
+</doc>

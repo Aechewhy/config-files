@@ -1,0 +1,14 @@
+body:
+  - type: dropdown
+    attributes:
+      name: default_browser
+      label: Default Browser
+      defaultValue: Chrome
+      options:
+        - Chrome
+        - Firefox
+        - Edge
+        - Brave
+        - Opera
+        - Vivaldi
+        - Arc

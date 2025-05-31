@@ -1,0 +1,121 @@
+08:14:34.0382+07:00 - INFO  - App.OnStartup - Begin Flow Launcher startup ----------------------------------------------------
+08:14:34.0382+07:00 - INFO  - App.OnStartup - Runtime info:
+Flow Launcher version: 1.19.5
+OS Version: 26100.4061
+IntPtr Length: 8
+x64: True
+08:14:36.9254+07:00 - INFO  - PluginManager.InitializePlugins - Total init cost for <System Commands> is <72ms>
+08:14:36.9254+07:00 - INFO  - PluginManager.InitializePlugins - Total init cost for <Plugin Indicator> is <66ms>
+08:14:36.9254+07:00 - INFO  - PluginManager.InitializePlugins - Total init cost for <Process Killer> is <83ms>
+08:14:36.9254+07:00 - INFO  - PluginManager.InitializePlugins - Total init cost for <ShareX_Flow_Plugin> is <85ms>
+08:14:36.9517+07:00 - INFO  - PluginManager.InitializePlugins - Total init cost for <URL> is <78ms>
+08:14:36.9642+07:00 - INFO  - PluginManager.InitializePlugins - Total init cost for <Shell> is <143ms>
+08:14:36.9696+07:00 - INFO  - PluginManager.InitializePlugins - Total init cost for <Web Searches> is <124ms>
+08:14:36.9696+07:00 - INFO  - PluginManager.InitializePlugins - Total init cost for <Windows Settings> is <155ms>
+08:14:37.2473+07:00 - INFO  - PluginManager.InitializePlugins - Total init cost for <Scoop> is <419ms>
+08:14:37.4246+07:00 - INFO  - PluginManager.InitializePlugins - Total init cost for <Explorer> is <702ms>
+08:14:37.4246+07:00 - INFO  - CommunityPluginSource.FetchAsync - Loading plugins from https://fastly.jsdelivr.net/gh/Flow-Launcher/Flow.Launcher.PluginsManifest@plugin_api_v2/plugins.json
+08:14:37.4504+07:00 - INFO  - ClipboardPlus.InitAsync - Use Windows clipboard history only: False
+08:14:37.4620+07:00 - INFO  - PluginManager.InitializePlugins - Total init cost for <Window Walker> is <569ms>
+08:14:37.5036+07:00 - INFO  - PluginManager.InitializePlugins - Total init cost for <PowerToys> is <585ms>
+08:14:37.5036+07:00 - INFO  - PluginManager.InitializePlugins - Total init cost for <Calculator> is <645ms>
+08:14:37.5198+07:00 - INFO  - PluginManager.InitializePlugins - Total init cost for <FlowTrumpet> is <606ms>
+08:14:37.5198+07:00 - INFO  - PluginManager.InitializePlugins - Total init cost for <VolumeFlow> is <361ms>
+08:14:37.5198+07:00 - INFO  - PluginManager.InitializePlugins - Total init cost for <WinsFlow> is <361ms>
+08:14:37.5326+07:00 - INFO  - Flow.Launcher.Plugin.Program.Main - Preload programs cost <33ms>
+08:14:37.5326+07:00 - INFO  - Flow.Launcher.Plugin.Program.Main - Number of preload win32 programs <1373>
+08:14:37.5326+07:00 - INFO  - Flow.Launcher.Plugin.Program.Main - Number of preload uwps <39>
+08:14:37.5326+07:00 - INFO  - PluginManager.InitializePlugins - Total init cost for <Program> is <782ms>
+08:14:37.5554+07:00 - INFO  - PluginManager.InitializePlugins - Total init cost for <Browser Bookmarks> is <743ms>
+08:14:37.5627+07:00 - INFO  - CommunityPluginSource.FetchAsync - Loading plugins from https://gcore.jsdelivr.net/gh/Flow-Launcher/Flow.Launcher.PluginsManifest@plugin_api_v2/plugins.json
+08:14:37.5627+07:00 - INFO  - CommunityPluginSource.FetchAsync - Loading plugins from https://cdn.jsdelivr.net/gh/Flow-Launcher/Flow.Launcher.PluginsManifest@plugin_api_v2/plugins.json
+08:14:37.5627+07:00 - INFO  - CommunityPluginSource.FetchAsync - Loading plugins from https://raw.githubusercontent.com/Flow-Launcher/Flow.Launcher.PluginsManifest/plugin_api_v2/plugins.json
+08:14:37.5627+07:00 - INFO  - PluginManager.InitializePlugins - Total init cost for <Browser History> is <607ms>
+08:14:37.8553+07:00 - INFO  - PluginManager.InitializePlugins - Total init cost for <WebApp launcher> is <1006ms>
+08:14:37.9149+07:00 - ERROR -  - ------------- BEGIN Flow.Launcher.Plugin.Program exception -------------
+08:14:37.9149+07:00 - ERROR -  - 
+Exception full name: System.IO.FileNotFoundException
+Error status: UNKNOWN
+Class name: Win32
+Calling method: ExeProgram
+Program path: C:\Program Files\Microsoft Visual Studio\2022\Community\common7\ide\devenv.exe
+InnerException number: 1
+Exception message: C:\Program Files\Microsoft Visual Studio\2022\Community\common7\ide\devenv.exe
+Exception error type: HResult -2147024894
+Exception thrown in called method: System.Diagnostics.FileVersionInfo GetVersionInfo(System.String)
+Possible interpretation of the error: File not found when trying to load the program from C:\Program Files\Microsoft Visual Studio\2022\Community\common7\ide\devenv.exe
+Possible resolution: Not yet known
+08:14:37.9149+07:00 - ERROR -  - ------------- END Flow.Launcher.Plugin.Program exception -------------
+08:14:38.1359+07:00 - INFO  - ClipboardPlus.InitAsync - Init Windows clipboard monitor successfully
+08:14:38.1359+07:00 - INFO  - PluginManager.InitializePlugins - Total init cost for <Clipboard+> is <1414ms>
+08:14:38.2048+07:00 - INFO  - PluginManager.InitializePlugins - Total init cost for <Win Hotkey> is <1247ms>
+08:14:38.6950+07:00 - INFO  - Flow.Launcher.Plugin.Program.Main - UWPProgram index cost <1160ms>
+08:14:38.7550+07:00 - INFO  - CommunityPluginSource.FetchAsync - Loaded 247 plugins from https://gcore.jsdelivr.net/gh/Flow-Launcher/Flow.Launcher.PluginsManifest@plugin_api_v2/plugins.json
+08:14:38.7550+07:00 - INFO  - PluginManager.InitializePlugins - Total init cost for <Plugins Manager> is <2002ms>
+08:14:39.3408+07:00 - INFO  - App.OnStartup - Dependencies Info:
+Python Path: C:\Users\LENOVO LEGION\scoop\apps\Flow-Launcher\current\app-1.19.5\UserData\Environments\Python\PythonEmbeddable-v3.11.4\pythonw.exe
+Node Path: 
+08:14:39.5692+07:00 - INFO  - ImageLoader.Initialize - Preload images cost <5263ms>
+08:14:39.5692+07:00 - INFO  - ImageLoader.Initialize - Number of preload images is <150>, Images Number: 150, Unique Items 83
+08:14:39.7851+07:00 - INFO  - App.OnStartup - End Flow Launcher startup ----------------------------------------------------  
+08:14:39.7851+07:00 - INFO  - App.OnStartup - Startup cost <5917ms>
+08:14:40.1561+07:00 - ERROR -  - ------------- BEGIN Flow.Launcher.Plugin.Program exception -------------
+08:14:40.1561+07:00 - ERROR -  - 
+Exception full name: System.Runtime.InteropServices.COMException
+Error status: UNKNOWN
+Class name: IShellLinkW
+Calling method: retrieveTargetPath
+Program path: C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Accessories\Windows Media Player Legacy.lnk
+InnerException number: 1
+Exception message: Error HRESULT E_FAIL has been returned from a call to a COM component.
+Exception error type: HResult -2147467259
+Exception thrown in called method: Void GetDescription(System.Text.StringBuilder, Int32)
+Possible interpretation of the error: Error caused likely due to trying to get the description of the program
+Possible resolution: Not yet known
+08:14:40.1561+07:00 - ERROR -  - ------------- END Flow.Launcher.Plugin.Program exception -------------
+08:14:53.6104+07:00 - INFO  - Flow.Launcher.Plugin.Program.Main - Win32Program index cost <16076ms>
+19:38:54.1693+07:00 - INFO  - App.OnStartup - Begin Flow Launcher startup ----------------------------------------------------
+19:38:54.1857+07:00 - INFO  - App.OnStartup - Runtime info:
+Flow Launcher version: 1.19.5
+OS Version: 26100.4061
+IntPtr Length: 8
+x64: True
+19:38:56.3905+07:00 - INFO  - PluginManager.InitializePlugins - Total init cost for <Process Killer> is <46ms>
+19:38:56.3905+07:00 - INFO  - PluginManager.InitializePlugins - Total init cost for <Plugin Indicator> is <41ms>
+19:38:56.3905+07:00 - INFO  - PluginManager.InitializePlugins - Total init cost for <System Commands> is <60ms>
+19:38:56.3905+07:00 - INFO  - PluginManager.InitializePlugins - Total init cost for <ShareX_Flow_Plugin> is <63ms>
+19:38:56.3905+07:00 - INFO  - PluginManager.InitializePlugins - Total init cost for <URL> is <63ms>
+19:38:56.4249+07:00 - INFO  - PluginManager.InitializePlugins - Total init cost for <Shell> is <122ms>
+19:38:56.4249+07:00 - INFO  - PluginManager.InitializePlugins - Total init cost for <Windows Settings> is <146ms>
+19:38:56.4373+07:00 - INFO  - PluginManager.InitializePlugins - Total init cost for <Web Searches> is <158ms>
+19:38:56.7037+07:00 - INFO  - PluginManager.InitializePlugins - Total init cost for <Scoop> is <419ms>
+19:38:56.8108+07:00 - INFO  - PluginManager.InitializePlugins - Total init cost for <Explorer> is <558ms>
+19:38:56.8108+07:00 - INFO  - CommunityPluginSource.FetchAsync - Loading plugins from https://fastly.jsdelivr.net/gh/Flow-Launcher/Flow.Launcher.PluginsManifest@plugin_api_v2/plugins.json
+19:38:56.9091+07:00 - INFO  - PluginManager.InitializePlugins - Total init cost for <FlowTrumpet> is <527ms>
+19:38:56.9091+07:00 - INFO  - PluginManager.InitializePlugins - Total init cost for <WinsFlow> is <480ms>
+19:38:56.9091+07:00 - INFO  - PluginManager.InitializePlugins - Total init cost for <VolumeFlow> is <483ms>
+19:38:56.9248+07:00 - INFO  - PluginManager.InitializePlugins - Total init cost for <Calculator> is <584ms>
+19:38:56.9411+07:00 - INFO  - Flow.Launcher.Plugin.Program.Main - Preload programs cost <24ms>
+19:38:56.9411+07:00 - INFO  - Flow.Launcher.Plugin.Program.Main - Number of preload win32 programs <1379>
+19:38:56.9411+07:00 - INFO  - Flow.Launcher.Plugin.Program.Main - Number of preload uwps <40>
+19:38:56.9577+07:00 - INFO  - PluginManager.InitializePlugins - Total init cost for <PowerToys> is <574ms>
+19:38:56.9577+07:00 - INFO  - PluginManager.InitializePlugins - Total init cost for <Window Walker> is <654ms>
+19:38:56.9577+07:00 - INFO  - PluginManager.InitializePlugins - Total init cost for <Browser History> is <538ms>
+19:38:56.9683+07:00 - INFO  - ClipboardPlus.InitAsync - Use Windows clipboard history only: False
+19:38:57.0090+07:00 - INFO  - PluginManager.InitializePlugins - Total init cost for <Browser Bookmarks> is <699ms>
+19:38:57.0316+07:00 - INFO  - PluginManager.InitializePlugins - Total init cost for <Program> is <741ms>
+19:38:57.0787+07:00 - INFO  - CommunityPluginSource.FetchAsync - Loading plugins from https://gcore.jsdelivr.net/gh/Flow-Launcher/Flow.Launcher.PluginsManifest@plugin_api_v2/plugins.json
+19:38:57.0787+07:00 - INFO  - CommunityPluginSource.FetchAsync - Loading plugins from https://cdn.jsdelivr.net/gh/Flow-Launcher/Flow.Launcher.PluginsManifest@plugin_api_v2/plugins.json
+19:38:57.0787+07:00 - INFO  - CommunityPluginSource.FetchAsync - Loading plugins from https://raw.githubusercontent.com/Flow-Launcher/Flow.Launcher.PluginsManifest/plugin_api_v2/plugins.json
+19:38:57.1814+07:00 - INFO  - PluginManager.InitializePlugins - Total init cost for <WebApp launcher> is <899ms>
+19:38:57.2434+07:00 - INFO  - PluginManager.InitializePlugins - Total init cost for <Plugins Manager> is <952ms>
+19:38:57.3976+07:00 - INFO  - ClipboardPlus.InitAsync - Init Windows clipboard monitor successfully
+19:38:57.3976+07:00 - INFO  - PluginManager.InitializePlugins - Total init cost for <Clipboard+> is <1119ms>
+19:38:57.6699+07:00 - INFO  - PluginManager.InitializePlugins - Total init cost for <Win Hotkey> is <1287ms>
+19:38:58.6290+07:00 - INFO  - App.OnStartup - Dependencies Info:
+Python Path: C:\Users\LENOVO LEGION\scoop\apps\Flow-Launcher\current\app-1.19.5\UserData\Environments\Python\PythonEmbeddable-v3.11.4\pythonw.exe
+Node Path: 
+19:38:59.0280+07:00 - INFO  - App.OnStartup - End Flow Launcher startup ----------------------------------------------------  
+19:38:59.0280+07:00 - INFO  - App.OnStartup - Startup cost <5034ms>
+19:39:01.2035+07:00 - INFO  - ImageLoader.Initialize - Preload images cost <4498ms>
+19:39:01.2035+07:00 - INFO  - ImageLoader.Initialize - Number of preload images is <150>, Images Number: 150, Unique Items 86

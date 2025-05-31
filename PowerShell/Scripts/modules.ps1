@@ -31,3 +31,5 @@ Set-PsFzfOption -EnableAliasFuzzySetEverything
 
 # Syntax highlighting
 Import-Module syntax-highlighting
+
+. ".\symlink.ps1"
