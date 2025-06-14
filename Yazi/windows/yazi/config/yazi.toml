@@ -89,6 +89,7 @@ rules = [
   { name = "*.py",   use = [ "edit", "open", "reveal"] },
   { name = "*.ahk",   use = [ "edit", "open", "reveal"] },
   { name = "*.ahk2",   use = [ "edit", "open", "reveal"] },
+  { name = "*.gitignore",   use = [ "edit", "open", "reveal"] },
 ]
 
 [tasks]
