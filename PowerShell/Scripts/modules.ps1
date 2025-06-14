@@ -32,4 +32,4 @@ Set-PsFzfOption -EnableAliasFuzzySetEverything
 # Syntax highlighting
 Import-Module syntax-highlighting
 
-. ".\symlink.ps1"
+. "C:\Users\LENOVO LEGION\OneDrive - Hanoi University of Science and Technology\Documents\PowerShell\Scripts\symlink.ps1"
