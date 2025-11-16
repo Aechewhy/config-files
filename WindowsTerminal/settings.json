@@ -7,17 +7,17 @@
             "command": 
             {
                 "action": "scrollToMark",
-                "direction": "previous"
+                "direction": "next"
             },
-            "id": "User.scrollToMark.D3F0B923"
+            "id": "User.scrollToMark.2A0DA8E0"
         },
         {
             "command": 
             {
                 "action": "scrollToMark",
-                "direction": "next"
+                "direction": "previous"
             },
-            "id": "User.scrollToMark.2A0DA8E0"
+            "id": "User.scrollToMark.D3F0B923"
         },
         {
             "command": "scrollToBottom",
@@ -33,17 +33,17 @@
         {
             "command": 
             {
-                "action": "addMark"
-            },
-            "id": "User.addMark.0"
-        },
-        {
-            "command": 
-            {
                 "action": "selectCommand",
                 "direction": "next"
             },
             "id": "User.selectCommand.2A0DA8E0"
+        },
+        {
+            "command": 
+            {
+                "action": "addMark"
+            },
+            "id": "User.addMark.0"
         },
         {
             "command": 
@@ -80,17 +80,21 @@
         {
             "command": 
             {
+                "action": "experimental.colorSelection"
+            },
+            "id": "User.experimental.colorSelection.D3F0B923"
+        },
+        {
+            "command": 
+            {
                 "action": "resizePane",
                 "direction": "up"
             },
             "id": "User.resizePane.6CD791B"
         },
         {
-            "command": 
-            {
-                "action": "experimental.colorSelection"
-            },
-            "id": "User.experimental.colorSelection.D3F0B923"
+            "command": "openSystemMenu",
+            "id": "User.openSystemMenu"
         },
         {
             "command": 
@@ -101,8 +105,8 @@
             "id": "User.selectCommand.D3F0B923"
         },
         {
-            "command": "openSystemMenu",
-            "id": "User.openSystemMenu"
+            "command": "restartConnection",
+            "id": "User.restartConnection"
         },
         {
             "command": 
@@ -113,8 +117,13 @@
             "id": "User.swapPane.87C324ED"
         },
         {
-            "command": "restartConnection",
-            "id": "User.restartConnection"
+            "command": 
+            {
+                "action": "newTab",
+                "profile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+                "startingDirectory": "C:\\Users\\LENOVO LEGION"
+            },
+            "id": "User.newTab.5DEADB41"
         },
         {
             "command": 
@@ -129,21 +138,8 @@
             "id": "User.paste"
         },
         {
-            "command": 
-            {
-                "action": "newTab",
-                "profile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
-                "startingDirectory": "C:\\Users\\LENOVO LEGION"
-            },
-            "id": "User.newTab.5DEADB41"
-        },
-        {
             "command": "openWindowRenamer",
             "id": "User.openWindowRenamer"
-        },
-        {
-            "command": "scrollToTop",
-            "id": "User.scrollToTop"
         },
         {
             "command": 
@@ -155,12 +151,8 @@
             "id": "User.splitPane.A6751878"
         },
         {
-            "command": 
-            {
-                "action": "clearBuffer",
-                "clear": "all"
-            },
-            "id": "User.clearBuffer.87C324ED"
+            "command": "scrollToTop",
+            "id": "User.scrollToTop"
         },
         {
             "command": 
@@ -176,6 +168,14 @@
                 "action": "commandPalette"
             },
             "id": "User.commandPalette.D3F0B923"
+        },
+        {
+            "command": 
+            {
+                "action": "clearBuffer",
+                "clear": "all"
+            },
+            "id": "User.clearBuffer.87C324ED"
         },
         {
             "command": "showContextMenu",
@@ -201,23 +201,16 @@
             "id": "User.resizePane.2A0DA8E0"
         },
         {
-            "command": "toggleAlwaysOnTop",
-            "id": "User.toggleAlwaysOnTop"
+            "command": "quit",
+            "id": "User.quit"
         },
         {
             "command": "selectAll",
             "id": "User.selectAll"
         },
         {
-            "command": "quit",
-            "id": "User.quit"
-        },
-        {
-            "command": 
-            {
-                "action": "quakeMode"
-            },
-            "id": "User.quakeMode.F1E129A4"
+            "command": "toggleAlwaysOnTop",
+            "id": "User.toggleAlwaysOnTop"
         },
         {
             "command": 
@@ -226,6 +219,13 @@
                 "direction": "right"
             },
             "id": "User.moveFocus.87C324ED"
+        },
+        {
+            "command": 
+            {
+                "action": "quakeMode"
+            },
+            "id": "User.quakeMode.F1E129A4"
         },
         {
             "command": 
@@ -261,33 +261,21 @@
         {
             "command": 
             {
+                "action": "exportBuffer"
+            },
+            "id": "User.exportBuffer.C5EEC4D3"
+        },
+        {
+            "command": 
+            {
                 "action": "splitPane",
                 "split": "up"
             },
             "id": "User.splitPane.B39B174B"
         },
         {
-            "command": 
-            {
-                "action": "exportBuffer"
-            },
-            "id": "User.exportBuffer.C5EEC4D3"
-        },
-        {
             "command": "closePane",
             "id": "User.closePane"
-        },
-        {
-            "command": 
-            {
-                "action": "moveTab",
-                "window": "new"
-            },
-            "id": "User.moveTab.EA39957B"
-        },
-        {
-            "command": "experimental.openScratchpad",
-            "id": "User.experimental.openScratchpad"
         },
         {
             "command": 
@@ -302,8 +290,28 @@
             "id": "User.toggleReadOnlyMode"
         },
         {
+            "command": "experimental.openScratchpad",
+            "id": "User.experimental.openScratchpad"
+        },
+        {
+            "command": 
+            {
+                "action": "moveTab",
+                "window": "new"
+            },
+            "id": "User.moveTab.EA39957B"
+        },
+        {
             "command": "toggleFocusMode",
             "id": "User.toggleFocusMode"
+        },
+        {
+            "command": 
+            {
+                "action": "moveFocus",
+                "direction": "nextInOrder"
+            },
+            "id": "User.moveFocus.D7681B66"
         },
         {
             "command": 
@@ -313,12 +321,8 @@
             "id": "User.setFocusMode.3856770F"
         },
         {
-            "command": 
-            {
-                "action": "moveFocus",
-                "direction": "nextInOrder"
-            },
-            "id": "User.moveFocus.D7681B66"
+            "command": "closeOtherPanes",
+            "id": "User.closeOtherPanes"
         },
         {
             "command": "resetFontSize",
@@ -330,10 +334,6 @@
                 "action": "adjustOpacity"
             },
             "id": "User.adjustOpacity.4C657714"
-        },
-        {
-            "command": "closeOtherPanes",
-            "id": "User.closeOtherPanes"
         },
         {
             "command": 
@@ -396,6 +396,14 @@
         {
             "command": 
             {
+                "action": "resizePane",
+                "direction": "down"
+            },
+            "id": "User.resizePane.F747588A"
+        },
+        {
+            "command": 
+            {
                 "action": "movePane",
                 "window": "new"
             },
@@ -412,14 +420,6 @@
             "command": 
             {
                 "action": "resizePane",
-                "direction": "down"
-            },
-            "id": "User.resizePane.F747588A"
-        },
-        {
-            "command": 
-            {
-                "action": "resizePane",
                 "direction": "right"
             },
             "id": "User.resizePane.87C324ED"
@@ -429,24 +429,24 @@
             "id": "User.restoreLastClosed"
         },
         {
-            "command": "identifyWindow",
-            "id": "User.identifyWindow"
-        },
-        {
             "command": "openTabColorPicker",
             "id": "User.openTabColorPicker"
+        },
+        {
+            "command": "identifyWindow",
+            "id": "User.identifyWindow"
         },
         {
             "command": "openNewTabDropdown",
             "id": "User.openNewTabDropdown"
         },
         {
-            "command": "toggleShaderEffects",
-            "id": "User.toggleShaderEffects"
-        },
-        {
             "command": "togglePaneZoom",
             "id": "User.togglePaneZoom"
+        },
+        {
+            "command": "toggleShaderEffects",
+            "id": "User.toggleShaderEffects"
         },
         {
             "command": 
@@ -480,28 +480,12 @@
             "keys": "alt+["
         },
         {
-            "id": "User.scrollToBottom",
-            "keys": "ctrl+end"
-        },
-        {
             "id": "User.moveFocus.D7681B66",
             "keys": "f6"
         },
         {
-            "id": null,
-            "keys": "ctrl+shift+period"
-        },
-        {
-            "id": null,
-            "keys": "ctrl+numpad0"
-        },
-        {
-            "id": null,
-            "keys": "ctrl+shift+pgdn"
-        },
-        {
-            "id": null,
-            "keys": "ctrl+shift+pgup"
+            "id": "User.scrollToBottom",
+            "keys": "ctrl+end"
         },
         {
             "id": null,
@@ -514,6 +498,22 @@
         {
             "id": "User.moveFocus.6CD791B",
             "keys": "ctrl+k"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+numpad0"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+shift+period"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+shift+pgup"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+shift+pgdn"
         },
         {
             "id": "User.scrollToMark.2A0DA8E0",
@@ -545,6 +545,10 @@
         },
         {
             "id": null,
+            "keys": "ctrl+shift+a"
+        },
+        {
+            "id": null,
             "keys": "menu"
         },
         {
@@ -553,27 +557,23 @@
         },
         {
             "id": null,
-            "keys": "ctrl+shift+a"
-        },
-        {
-            "id": null,
             "keys": "ctrl+insert"
-        },
-        {
-            "id": null,
-            "keys": "alt+enter"
         },
         {
             "id": null,
             "keys": "ctrl+alt+u"
         },
         {
-            "id": "User.toggleFocusMode",
-            "keys": "f8"
+            "id": null,
+            "keys": "alt+enter"
         },
         {
             "id": "User.resizePane.2A0DA8E0",
             "keys": "ctrl+alt+h"
+        },
+        {
+            "id": "User.toggleFocusMode",
+            "keys": "f8"
         },
         {
             "id": null,
@@ -593,15 +593,15 @@
         },
         {
             "id": null,
+            "keys": "ctrl+c"
+        },
+        {
+            "id": null,
             "keys": "shift+right"
         },
         {
             "id": "User.splitPane.B39B174B",
             "keys": "ctrl+shift+k"
-        },
-        {
-            "id": null,
-            "keys": "ctrl+c"
         },
         {
             "id": null,
@@ -617,15 +617,15 @@
         },
         {
             "id": null,
+            "keys": "ctrl+alt+comma"
+        },
+        {
+            "id": null,
             "keys": "ctrl+]"
         },
         {
             "id": "User.restartConnection",
             "keys": "f5"
-        },
-        {
-            "id": null,
-            "keys": "ctrl+alt+comma"
         },
         {
             "id": null,
@@ -645,6 +645,10 @@
         },
         {
             "id": null,
+            "keys": "shift+insert"
+        },
+        {
+            "id": null,
             "keys": "ctrl+`"
         },
         {
@@ -653,15 +657,11 @@
         },
         {
             "id": null,
-            "keys": "shift+insert"
+            "keys": "shift+f2"
         },
         {
             "id": null,
             "keys": "alt+shift+down"
-        },
-        {
-            "id": null,
-            "keys": "shift+f2"
         },
         {
             "id": null,
@@ -684,12 +684,12 @@
             "keys": "alt+left"
         },
         {
-            "id": "User.closeOtherPanes",
-            "keys": "ctrl+alt+p"
-        },
-        {
             "id": null,
             "keys": "alt+right"
+        },
+        {
+            "id": "User.closeOtherPanes",
+            "keys": "ctrl+alt+p"
         },
         {
             "id": null,
@@ -701,7 +701,7 @@
         },
         {
             "id": null,
-            "keys": "ctrl+shift+e"
+            "keys": "shift+left"
         },
         {
             "id": null,
@@ -709,15 +709,15 @@
         },
         {
             "id": null,
-            "keys": "shift+left"
-        },
-        {
-            "id": "Terminal.ScrollUpPage",
-            "keys": "pgup"
+            "keys": "ctrl+shift+e"
         },
         {
             "id": null,
             "keys": "ctrl+f5"
+        },
+        {
+            "id": "Terminal.ScrollUpPage",
+            "keys": "pgup"
         },
         {
             "id": null,
@@ -732,6 +732,10 @@
             "keys": "shift+up"
         },
         {
+            "id": null,
+            "keys": "ctrl+left"
+        },
+        {
             "id": "User.moveFocus.F747588A",
             "keys": "ctrl+j"
         },
@@ -741,11 +745,7 @@
         },
         {
             "id": null,
-            "keys": "ctrl+left"
-        },
-        {
-            "id": null,
-            "keys": "ctrl+shift+r"
+            "keys": "ctrl+right"
         },
         {
             "id": null,
@@ -753,15 +753,15 @@
         },
         {
             "id": null,
-            "keys": "ctrl+right"
-        },
-        {
-            "id": null,
-            "keys": "end"
+            "keys": "ctrl+shift+r"
         },
         {
             "id": null,
             "keys": "ctrl+shift+left"
+        },
+        {
+            "id": null,
+            "keys": "end"
         },
         {
             "id": null,
@@ -788,24 +788,24 @@
             "keys": "ctrl+shift+space"
         },
         {
-            "id": null,
-            "keys": "ctrl+alt+i"
+            "id": "User.splitPane.A6751878",
+            "keys": "ctrl+\\"
         },
         {
             "id": "User.addMark.0",
             "keys": "ctrl+m"
         },
         {
-            "id": "User.splitPane.A6751878",
-            "keys": "ctrl+\\"
-        },
-        {
             "id": null,
-            "keys": "alt+down"
+            "keys": "ctrl+alt+i"
         },
         {
             "id": "User.resizePane.87C324ED",
             "keys": "ctrl+alt+l"
+        },
+        {
+            "id": null,
+            "keys": "alt+down"
         },
         {
             "id": null,
@@ -824,12 +824,12 @@
             "keys": "ctrl+shift+n"
         },
         {
-            "id": "User.selectOutput.D3F0B923",
-            "keys": "ctrl+o"
-        },
-        {
             "id": "User.swapPane.87C324ED",
             "keys": "ctrl+shift+p"
+        },
+        {
+            "id": "User.selectOutput.D3F0B923",
+            "keys": "ctrl+o"
         },
         {
             "id": "User.restoreLastClosed",
@@ -844,12 +844,12 @@
             "keys": "ctrl+alt+a"
         },
         {
-            "id": "User.paste",
-            "keys": "ctrl+shift+v"
-        },
-        {
             "id": "User.swapPane.6CD791B",
             "keys": "ctrl+shift+o"
+        },
+        {
+            "id": "User.paste",
+            "keys": "ctrl+shift+v"
         },
         {
             "id": "User.openWindowRenamer",
@@ -880,20 +880,20 @@
             "keys": "ctrl+shift+l"
         },
         {
-            "id": "User.closeTab.0",
-            "keys": "ctrl+shift+w"
-        },
-        {
             "id": "User.nextTab.0",
             "keys": "alt+period"
         },
         {
-            "id": "User.newTab.5DEADB41",
-            "keys": "ctrl+t"
+            "id": "User.closeTab.0",
+            "keys": "ctrl+shift+w"
         },
         {
             "id": "User.openTabRenamer",
             "keys": "f2"
+        },
+        {
+            "id": "User.newTab.5DEADB41",
+            "keys": "ctrl+t"
         },
         {
             "id": "User.closePane",
@@ -920,12 +920,12 @@
             "keys": "ctrl+h"
         },
         {
-            "id": "User.splitPane.21DBB4A1",
-            "keys": "ctrl+shift+h"
-        },
-        {
             "id": "User.findMatch.87C324ED",
             "keys": "shift+f3"
+        },
+        {
+            "id": "User.splitPane.21DBB4A1",
+            "keys": "ctrl+shift+h"
         },
         {
             "id": "User.closeOtherTabs.0",
@@ -974,7 +974,7 @@
         {
             "adjustIndistinguishableColors": "always",
             "autoMarkPrompts": true,
-            "colorScheme": "GruvboxDarkHard",
+            "colorScheme": "The Dark Side of The Moon",
             "cursorShape": "filledBox",
             "elevate": true,
             "experimental.retroTerminalEffect": false,
@@ -7006,6 +7006,29 @@
             "selectionBackground": "#4D4D4D",
             "white": "#CCCCC6",
             "yellow": "#F4FD22"
+        },
+        {
+            "background": "#000000",
+            "black": "#000000",
+            "blue": "#5793AB",
+            "brightBlack": "#767676",
+            "brightBlue": "#71C0DE",
+            "brightCyan": "#E88514",
+            "brightGreen": "#7DC62C",
+            "brightPurple": "#634C8A",
+            "brightRed": "#CC102D",
+            "brightWhite": "#FFFFFF",
+            "brightYellow": "#FFFF28",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#B4670F",
+            "foreground": "#FFFFFF",
+            "green": "#5C9320",
+            "name": "The Dark Side of The Moon",
+            "purple": "#3E2F56",
+            "red": "#990B21",
+            "selectionBackground": "#FFFFFF",
+            "white": "#CCCCCC",
+            "yellow": "#CCCC20"
         },
         {
             "background": "#1B1D1E",
