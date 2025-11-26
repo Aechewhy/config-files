@@ -7,7 +7,7 @@ Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
 #WingetNotFound by PowerToys
 Import-Module -Name Microsoft.WinGet.CommandNotFound
 #Display file icons
-Import-Module -Name Terminal-Icons
+# Import-Module -Name Terminal-Icons
 ###
 #Chocolatey
 ###

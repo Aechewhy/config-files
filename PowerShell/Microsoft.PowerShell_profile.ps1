@@ -1,5 +1,5 @@
 # Import modules
-. "$PSScriptRoot\Scripts\modules.ps1"
+# . "$PSScriptRoot\Scripts\modules.ps1"
 # Import aliases
 . "$PSScriptRoot\Scripts\aliases.ps1"
 ######################################################
