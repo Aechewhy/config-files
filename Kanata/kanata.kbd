@@ -1,0 +1,122 @@
+;;NOTES:
+;;  S- are shift, used for ( or $
+(defsrc
+  esc   f1    f2    f3    f4    f5    f6    f7    f8    f9    f10   f11   f12 del
+  `     1    2    3    4    5       6    7    8    9    0       -    =    bspc
+  tab   q    w    e    r    t       y    u    i    o    p       [    ]    ret 
+  caps  a    s    d    f    g       h    j    k    l    ;       '    \ 
+  lsft  z    x    c    v    b       n    m    ,    .    /       rsft
+  lctl      lalt lmet          spc            rmet ralt
+) 
+(defvar
+  ;; Note: consider using different time values for your different fingers.
+  ;; For example, your pinkies might be slower to release keys and index
+  ;; fingers faster.
+  tap-time 200
+  hold-time 200 
+  hold-time-slow 300
+  scroll-distance 120
+  interval 50
+)
+(defalias
+  l_num(layer-toggle num)
+  l_arrows(layer-toggle arrows)
+  l_mouse(layer-toggle mouse)
+  l_special(layer-toggle special)
+    
+  g (tap-hold $tap-time $hold-time g @l_num)
+  spc (tap-hold $tap-time $hold-time spc @l_arrows)
+  ralt (tap-hold $tap-time $hold-time bspc @l_special)
+  h (tap-hold $tap-time $hold-time h @l_mouse)
+
+
+  f (tap-hold $tap-time $hold-time f lctl)
+  j (tap-hold $tap-time $hold-time j rctl)
+
+  d (tap-hold $tap-time $hold-time d lsft)
+  k (tap-hold $tap-time $hold-time k rsft)
+
+  s (tap-hold $tap-time $hold-time s lalt)
+  l (tap-hold $tap-time $hold-time l ralt)
+
+  a (tap-hold $tap-time $hold-time a lmet)
+  ; (tap-hold $tap-time $hold-time ; rmet)
+
+  scroll-up (mwheel-up $interval $scroll-distance)
+  scroll-down (mwheel-down $interval $scroll-distance)
+  scroll-left (mwheel-left $interval $scroll-distance)
+  scroll-right (mwheel-right $interval $scroll-distance)
+
+;;  c_bspc_j (chord bspc j)
+;;  c_bspc_k (chord bspc k)
+;;  c_bspc_l (chord bspc l)
+
+  c_space_spc (chord space spc)
+  c_space_f (chord space f)
+  c_space_j (chord space j)
+  c_space_k (chord space k)
+  c_space_d (chord space d)
+
+)
+;;(defchords bspc 50
+;;  (j  ) @j
+;;  ( k ) @k
+;;  (  l) @l
+;;  (j k) (tap-hold $tap-time $hold-time bspc (multi ctl sft))
+;;  (k l) del
+;;)
+(defchords space 50
+  (spc) @spc
+  (j) @j
+  (k) @k
+  (f) @f
+  (d) @d
+  (f spc) bspc
+  (j spc) ret
+  (k spc) tab
+  (d spc) del
+)  
+(deflayer base
+  esc   f1    f2    f3    f4    f5    f6    f7    f8    f9    f10   f11   f12 del
+  `     1    2    3    4    5      6    7    8    9    0       -    =    bspc
+  tab   q    w    e    r    t      y    u    i    o   p  [ ] ret 
+  caps  @a   @s @c_space_d @c_space_f  @g      @h  @c_space_j    @c_space_k   @l    @;  ' \ 
+  lsft  z    x    c    v    b       n   m     ,    .    /       rsft
+  lctl      lalt lmet          @c_space_spc            rmet @ralt
+)
+
+(deflayer arrows
+  esc   f1    f2    f3    f4    f5    f6    f7    f8    f9    f10   f11   f12 del
+  `     1    2    3    4    5       6    7    8    9    0       -    =    bspc
+  tab   home   up    end    r    t       y    u    i    o    p       [    ]    ret 
+  caps  left   down right bspc    g       h    @j    @k    @l    @; '    \ 
+  lsft  pgup   ret pgdn     del    b       n    m    ,    .    /       rsft
+  lctl      lalt lmet          spc            rmet ralt
+)
+(deflayer num
+  esc   f1    f2    f3    f4    f5    f6    f7    f8    f9    f10   f11   f12 del
+  `     1    2    3    4    5      S-5 S-6    /  S-8    -      S-9  S-0   bspc ;;S-9 and S-0 are ( and )
+  tab   q    w    e    r    t       =    7    8    9    +       [    ]    ret 
+  caps  a    s    d    f    g       .    4    5    6    ret       '    \ 
+  lsft  z    x    c    v    b       0    1    2    3    bspc     rsft
+  lctl      lalt lmet          spc            rmet ralt
+)
+
+(deflayer special
+  esc   f1    f2    f3    f4    f5    f6    f7    f8    f9    f10   f11   f12 del
+  `    S-1  S-2  S-3  S-4  S-5       6    7    8    9    0       -    =    bspc
+  tab  S-6  S-7  S-8   S-[ S-]      y    u    i    o    p    [    ]    ret 
+  caps  +    -   S-9  S-0   =       h   @j   @k   @l   @;    '    \ 
+  lsft `    S-\    \   [    ]       n    m    ,    .    /       rsft
+  lctl      lalt lmet          spc            rmet ralt
+)
+
+(deflayer mouse
+  esc   f1    f2    f3    f4    f5    f6    f7    f8    f9    f10   f11   f12 del
+  `     1    2    3    4    5       6    7    8    9    0       -    =    bspc
+  tab   q    @scroll-up    e    r    t       y    u    i    o    p       [    ]    ret 
+  caps  @scroll-left    @scroll-down    @scroll-right    f    g       h    j    k    l    ;       '    \ 
+  lsft  z    x    c    v    b       n    m    ,    .    /       rsft
+  lctl      lalt lmet          spc            rmet ralt
+
+)

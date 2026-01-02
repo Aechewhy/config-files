@@ -1,0 +1,89 @@
+unmap 0
+unmap <c-e>
+unmap <c-y>
+map \c sortTabs sort="createTime"
+map \r sortTabs sort="recency"
+
+map <a-,> previousTab
+map <a-.> nextTab
+map J nextTab
+map K previousTab
+map <c-s-h> goBack reuse="newFg"
+map po visitPreviousTab acrossWindows
+map pp visitPreviousTab
+map $ lastTab
+map 0 firstTab
+
+map <a-s-<> moveTabLeft
+map <a-s->> moveTabRight
+map wi moveTabToIncognito
+map wn moveTabToNewWindow
+map ww joinTabs
+
+map xx removeTab
+map xd discardTab
+map xZ closeTabsOnLeft
+map xC closeTabsOnRight 
+map xz closeTabsOnLeft $count=-1 # close onely one
+map xc closeTabsOnRight $count=1 # close only one
+map xX closeOtherTabs
+map xr removeRightTab
+map XX restoreGivenTab
+map Xx restoreTab
+map Xr reopenTab
+
+map <s-down> scrollPxDown
+map <s-left> scrollPxLeft
+map <s-right> scrollPxRight
+map <s-up> scrollPxUp
+map D scrollFullPageDown
+map U scrollFullPageUp
+map gU goToRoot
+map gu goUp
+
+map s LinkHints.activateOpenInNewTab
+map S LinkHints.activateOpenInNewForegroundTab
+map f LinkHints.activate
+map Fd LinkHints.activateDownloadLink
+map Fe LinkHints.activateOpenVomnibar
+map Fi LinkHints.activateCopyImage
+map FI LinkHints.activateOpenImage
+map Fq LinkHints.activateWithQueue
+map Fs LinkHints.activateSearchLinkText
+map Ft LinkHints.activateCopyLinkText
+map Fu LinkHints.activateCopyLinkUrl
+map Fv LinkHints.activateSelect
+map Fw LinkHints.activateOpenIncognito
+map FD LinkHints.activateDownloadImage
+
+map Pc openCopiedUrlInCurrentTab
+map Pn openCopiedUrlInNewTab
+map <c-a-c> copyWindowInfo format="${URL}"
+
+map <c-`> Marks.clearLocal
+map <c-~> Marks.clearGlobal
+
+map z0 zoomReset
+map zi zoomIn
+map zo zoomOut
+
+map <f1> toggleMuteTab
+map <c-f1> toggleMuteTab all
+map <s-f1> toggleMuteTab other
+
+map t Vomnibar.activateTabs
+map O Vomnibar.activate
+map o Vomnibar.activateInNewTab
+map b Vomnibar.activateBookmarksInNewTab
+map B Vomnibar.activateBookmarks
+map e Vomnibar.activateEditUrl
+map E Vomnibar.activateEditUrlInNewTab
+map r Vomnibar.activateHistoryInNewTab
+map R Vomnibar.activateHistory
+
+map <a-|> enterInsertMode
+map <c-p> togglePinTab
+map i focusInput
+map <c-/> clearFindHistory
+
+" Character use for link hints: asdfghjkl;weruiovn

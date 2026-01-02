@@ -1,0 +1,383 @@
+{
+    "[cpp]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "[latex]": {
+        "editor.defaultFormatter": "James-Yu.latex-workshop"
+    },
+    "better-comments.tags": [
+        {
+            "backgroundColor": "transparent",
+            "bold": false,
+            "color": "#FF2D00",
+            "italic": false,
+            "strikethrough": false,
+            "tag": "!",
+            "underline": false
+        },
+        {
+            "backgroundColor": "transparent",
+            "bold": false,
+            "color": "#3498DB",
+            "italic": false,
+            "strikethrough": false,
+            "tag": "?",
+            "underline": false
+        },
+        {
+            "backgroundColor": "transparent",
+            "bold": false,
+            "color": "#474747",
+            "italic": false,
+            "strikethrough": true,
+            "tag": "//",
+            "underline": false
+        },
+        {
+            "backgroundColor": "transparent",
+            "bold": false,
+            "color": "#FF8C00",
+            "italic": false,
+            "strikethrough": false,
+            "tag": "todo",
+            "underline": false
+        },
+        {
+            "backgroundColor": "transparent",
+            "bold": false,
+            "color": "#98C379",
+            "italic": false,
+            "strikethrough": false,
+            "tag": "*",
+            "underline": false
+        }
+    ],
+    "code-runner.runInTerminal": true,
+    "code-runner.saveFileBeforeRun": true,
+    "debug.openDebug": "openOnDebugBreak",
+    "editor.cursorBlinking": "expand",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.cursorSurroundingLines": 5,
+    "editor.cursorWidth": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.fontFamily": "\"JetBrainsMono Nerd Font\", \"FiraCode Nerd Font\", \"Cascadia Code\", monospace",
+    "editor.fontLigatures": false,
+    "editor.fontSize": 17,
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.lineNumbers": "relative",
+    "editor.tabCompletion": "off",
+    "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?",
+    //Some font names
+    //JetBrains Mono
+    //CaskaydiaCove Nerd Font
+    //FiraCode Nerd Font
+    //Cascadia Code
+    "editor.wordWrap": "on",
+    "errorLens.enabledDiagnosticLevels": ["error", "warning", "info", "hint"],
+    "errorLens.gutterEmoji": {
+        "info": "ℹ️",
+        "warning": "⚠️"
+    },
+    "explorer.confirmDragAndDrop": false,
+    "explorer.fileNesting.enabled": true,
+    "files.defaultLanguage": "",
+    "git.autofetch": true,
+    "git.openRepositoryInParentFolders": "always",
+    //INDENT-RAINBOW
+    "indentRainbow.colors": [
+        "rgba(255,0,255,0.15)", // Purple
+        "rgba(0,255,0,0.15)", // Red
+        "rgba(0,0,255,0.15)" // Green
+    ],
+    "indentRainbow.errorColor": "rgba(255,0,0,1)",
+    "indentRainbow.indicatorStyle": "light",
+    "indentRainbow.lightIndicatorStyleLineWidth": 3,
+
+    "latex-workshop.latex.autoBuild.run": "onSave",
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "latexmk",
+            "tools": ["latexmk"]
+        },
+        {
+            "name": "latexmk (latexmkrc)",
+            "tools": ["latexmk_rconly"]
+        },
+        {
+            "name": "latexmk (lualatex)",
+            "tools": ["lualatexmk"]
+        },
+        {
+            "name": "latexmk (xelatex)",
+            "tools": ["xelatexmk"]
+        },
+        {
+            "name": "pdflatex -> bibtex -> pdflatex * 2",
+            "tools": ["pdflatex", "bibtex", "pdflatex", "pdflatex"]
+        },
+        {
+            "name": "Compile Rnw files",
+            "tools": ["rnw2tex", "latexmk"]
+        },
+        {
+            "name": "Compile Jnw files",
+            "tools": ["jnw2tex", "latexmk"]
+        },
+        {
+            "name": "Compile Pnw files",
+            "tools": ["pnw2tex", "latexmk"]
+        },
+        {
+            "name": "tectonic",
+            "tools": ["tectonic"]
+        }
+    ],
+    "latex-workshop.latex.toolchain": [
+        {
+            "args": ["-interaction=nonstopmode", "-synctex=1", "%DOC%"],
+            "command": "pdflatex",
+            "name": "pdflatex"
+        }
+    ],
+    "liveServer.settings.donotShowInfoMsg": true,
+    "liveServer.settings.donotVerifyTags": true,
+    "markdown.extension.extraLangIds": [],
+    "material-icon-theme.folders.theme": "specific",
+    "powershell.buttons.showPanelMovementButtons": false,
+    "powershell.codeFolding.showLastLine": true,
+    "powershell.integratedConsole.focusConsoleOnExecute": true,
+    "powershell.sideBar.CommandExplorerVisibility": false,
+    "prettier.tabWidth": 4,
+    "python.defaultInterpreterPath": "C:\\Users\\LENOVO LEGION\\AppData\\Local\\Microsoft\\WindowsApps\\python3.12.exe",
+    "search.showLineNumbers": true,
+    "security.workspace.trust.enabled": false,
+    "synthwave84.brightness": 0.9,
+    "tabnine.experimentalAutoImports": true,
+    "terminal.external.windowsExec": "\"C:\\Program Files\\WindowsApps\\Microsoft.PowerShell_7.4.6.0_x64__8wekyb3d8bbwe\\pwsh.exe\"",
+    "terminal.integrated.copyOnSelection": true,
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "terminal.integrated.enableVisualBell": true,
+    "terminal.integrated.fontLigatures": true,
+    "terminal.integrated.hideOnStartup": "whenEmpty",
+    "terminal.integrated.mouseWheelZoom": true,
+    "terminal.integrated.smoothScrolling": true,
+    "vscode_custom_css.imports": [
+        "file:///C:/Users/LENOVO%20LEGION/Repositories/config-files/Vscode/vscode_custom.css"
+    ],
+    "window.closeWhenEmpty": true,
+    "window.density.editorTabHeight": "compact",
+    "window.enableMenuBarMnemonics": false,
+    "workbench.activityBar.location": "top",
+    "workbench.colorTheme": "GitHub Dark Default",
+    "workbench.editor.editorActionsLocation": "titleBar",
+    "workbench.editorAssociations": {
+        "*.dat": "default",
+        "*.pdf": "latex-workshop-pdf-hook"
+    },
+    "workbench.navigationControl.enabled": false,
+    "workbench.settings.openDefaultKeybindings": true,
+    "workbench.startupEditor": "none",
+    "workbench.view.alwaysShowHeaderActions": true,
+    "editor.minimap.enabled": false,
+    "files.associations": {
+        "*.hbs": "html"
+    },
+    ///VIM
+    "vim.useSystemClipboard": true,
+    "vim.visualstar": true,
+    "vim.highlightedyank.enable": true,
+    "vim.hlsearch": true,
+    "vim.sneak": false, // Better "f"
+    "vim.camelCaseMotion.enable": true,
+    "vim.surround": true, //work with brackets around text
+    "vim.easymotion": true, //Vim in Vim
+    "vim.handleKeys": {
+        "<C-d>": true,
+        "<C-s>": false,
+        "<C-z>": false,
+        "<C-p>": false,
+        "<C-b>": true,
+        "<C-/>": false
+    },
+    "vim.leader": " ",
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "j"],
+            "a": ["<Esc>"]
+        },
+        {
+            "before": ["k", "k"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "vim.normalModeKeyBindings": [
+        {
+            "before": ["L"],
+            "after": ["$"]
+        },
+        {
+            "before": ["H"],
+            "after": ["^"]
+        },
+        {
+            "before": ["<C-N>"],
+            "after": ["workbench.action.files.newUntitledFile"]
+        },
+        {
+            "before": ["<Esc>"],
+            "commands": [":nohl"]
+        },
+        {
+            "before": ["<C-h>"],
+            "commands": ["editor.action.startFindReplaceAction"]
+        },
+        {
+            "before": ["<leader>", "e"],
+            "commands": ["workbench.view.explorer"]
+        },
+        {
+            "before": ["<leader>", "k"],
+            "after": ["<leader>", "<leader>", "k"]
+        },
+        {
+            "before": ["<leader>", "j"],
+            "after": ["<leader>", "<leader>", "j"]
+        },
+        {
+            "before": ["<leader>", "l"],
+            "commands": ["workbench.action.nextEditor"]
+        },
+        {
+            "before": ["<leader>", "h"],
+            "commands": ["workbench.action.previousEditor"]
+        },
+        {
+            "before": ["<leader>", "m"],
+            "commands": [":marks"]
+        },
+        {
+            "before": ["<leader>", "s"],
+            "after": ["<leader>", "<leader>", "s"]
+        },
+        {
+            "before": ["<leader>", "_"],
+            "commands": ["workbench.action.splitEditorDown"]
+        },
+        {
+            "before": ["<leader>", "|"],
+            "commands": ["workbench.action.splitEditorRight"]
+        },
+        {
+            "before": ["<C-Space>", "j"],
+            "commands": ["editor.action.copyLinesDownAction"]
+        },
+        {
+            "before": ["<C-Space>", "k"],
+            "commands": ["editor.action.copyLinesUpAction"]
+        },
+        {
+            "before": ["<C-Space>", "b"],
+            "commands": ["workbench.action.toggleSidebarVisibility"]
+        },
+        {
+            "before": ["<C-Space>", "<C-b>"],
+            "commands": ["workbench.action.toggleAuxiliarybar"]
+        },
+        {
+            "before": ["<C-Space>", "w"],
+            "commands": ["workbench.action.closeActiveEditor"]
+        },
+
+        {
+            "before": ["<Leader>", "]"],
+            "commands": ["editor.action.moveLinesDownAction"]
+        },
+        {
+            "before": ["<Leader>", "["],
+            "commands": ["editor.action.moveLinesUpAction"]
+        },
+        {
+            "before": ["<C-Space>", "c"],
+            "after": ["g", "g", "V", "G", "y"]
+        },
+        {
+            "before": ["<C-Space>", "a"],
+            "after": ["g", "g", "V", "G"]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<leader>", "w"],
+            "after": ["<leader>", "<leader>", "w"]
+        },
+        {
+            "before": ["f"],
+            "after": ["<leader>", "<leader>", "<leader>", "j"]
+        },
+        {
+            "before": ["<C-Space>", "s"],
+            "commands": ["workbench.action.files.save"]
+        },
+
+        {
+            "before": ["<leader>", "/"],
+            "after": ["<leader>", "<leader>", "/"]
+        }
+    ],
+    "vim.visualModeKeyBindings": [
+        {
+            "before": ["<leader>", "k"],
+            "after": ["<leader>", "<leader>", "k"]
+        },
+        {
+            "before": ["<leader>", "j"],
+            "after": ["<leader>", "<leader>", "j"]
+        },
+        {
+            "before": ["f"],
+            "after": ["<leader>", "<leader>", "<leader>", "j"]
+        },
+        {
+            "before": ["<C-h>"],
+            "commands": ["editor.action.startFindReplaceAction"]
+        },
+        {
+            "before": ["<C-f>"],
+            "commands": ["actions.findWithSelection"]
+        },
+        {
+            "before": [">"],
+            "commands": ["editor.action.indentLines"]
+        },
+        {
+            "before": ["<"],
+            "commands": ["editor.action.outdentLines"]
+        }
+    ],
+    "vim.operatorPendingModeKeyBindings": [
+        {
+            "before": ["L"],
+            "after": ["$"]
+        },
+        {
+            "before": ["H"],
+            "after": ["^"]
+        }
+    ],
+    "diffEditor.hideUnchangedRegions.enabled": true,
+    "workbench.layoutControl.enabled": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "material-icon-theme.opacity": 1,
+    "diffEditor.renderSideBySide": true,
+    "window.menuBarVisibility": "compact",
+    "window.commandCenter": false,
+    "codesnap.boxShadow": "rgba(0, 0, 0, 0.0) 0px 0px 8px",
+    "codesnap.containerPadding": "2px",
+    "codesnap.shutterAction": "copy",
+    "codesnap.showWindowControls": false,
+    "security.allowedUNCHosts": ["wsl.localhost"],
+    "glassit.alpha": 255,
+    "frosted-glass-theme.fakeMica.enabled": true
+}

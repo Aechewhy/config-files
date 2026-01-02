@@ -1,0 +1,128 @@
+{
+  "SearchSources": [
+    {
+      "Title": "Google",
+      "ActionKeyword": "*",
+      "Icon": "google.png",
+      "CustomIcon": false,
+      "Url": "https://www.google.com/search?q={q}",
+      "Enabled": true
+    },
+    {
+      "Title": "Wikipedia",
+      "ActionKeyword": "wk",
+      "Icon": "wiki.png",
+      "CustomIcon": false,
+      "Url": "https://en.wikipedia.org/wiki/{q}",
+      "Enabled": true
+    },
+    {
+      "Title": "Facebook",
+      "ActionKeyword": "fb",
+      "Icon": "facebook.png",
+      "CustomIcon": false,
+      "Url": "https://www.facebook.com/search/?q={q}",
+      "Enabled": true
+    },
+    {
+      "Title": "Google Maps",
+      "ActionKeyword": "map",
+      "Icon": "google_maps.png",
+      "CustomIcon": false,
+      "Url": "https://maps.google.com/maps?q={q}",
+      "Enabled": true
+    },
+    {
+      "Title": "DuckDuckGo",
+      "ActionKeyword": "ddg",
+      "Icon": "duckduckgo.png",
+      "CustomIcon": false,
+      "Url": "https://duckduckgo.com/?q={q}",
+      "Enabled": true
+    },
+    {
+      "Title": "GitHub",
+      "ActionKeyword": "gh",
+      "Icon": "github.png",
+      "CustomIcon": false,
+      "Url": "https://github.com/search?q={q}",
+      "Enabled": true
+    },
+    {
+      "Title": "Google Drive",
+      "ActionKeyword": "drive",
+      "Icon": "google_drive.png",
+      "CustomIcon": false,
+      "Url": "https://drive.google.com/?hl=en\u0026tab=bo#search/{q}",
+      "Enabled": true
+    },
+    {
+      "Title": "Stack Overflow",
+      "ActionKeyword": "stackoverflow",
+      "Icon": "stackoverflow.png",
+      "CustomIcon": false,
+      "Url": "https://stackoverflow.com/search?q={q}",
+      "Enabled": true
+    },
+    {
+      "Title": "Google Images",
+      "ActionKeyword": "gi",
+      "Icon": "google.png",
+      "CustomIcon": false,
+      "Url": "https://www.google.com/search?q={q}\u0026tbm=isch",
+      "Enabled": true
+    },
+    {
+      "Title": "YouTube",
+      "ActionKeyword": "yt",
+      "Icon": "youtube.png",
+      "CustomIcon": false,
+      "Url": "https://www.youtube.com/results?search_query={q}",
+      "Enabled": true
+    },
+    {
+      "Title": "Thesaurus",
+      "ActionKeyword": "tsr",
+      "Icon": "web_search.png",
+      "CustomIcon": false,
+      "Url": "https://www.thesaurus.com/browse/%{q}",
+      "Enabled": true
+    },
+    {
+      "Title": "Reddit",
+      "ActionKeyword": "rd",
+      "Icon": "web_search.png",
+      "CustomIcon": false,
+      "Url": "https://www.reddit.com/search/?q=%{q}",
+      "Enabled": true
+    },
+    {
+      "Title": "Cambridge Dictionary",
+      "ActionKeyword": "en",
+      "Icon": "web_search.png",
+      "CustomIcon": false,
+      "Url": "https://dictionary.cambridge.org/dictionary/english/{q}",
+      "Enabled": true
+    },
+    {
+      "Title": "YouTube Music",
+      "ActionKeyword": "ytm",
+      "Icon": "web_search.png",
+      "CustomIcon": false,
+      "Url": "https://www.youtube.com/results?search_query={q}",
+      "Enabled": true
+    },
+    {
+      "Title": "ChatGPT",
+      "ActionKeyword": "gpt",
+      "Icon": "web_search.png",
+      "CustomIcon": false,
+      "Url": "https://chat.openai.com/?q={q}",
+      "Enabled": true
+    }
+  ],
+  "EnableSuggestion": false,
+  "Suggestion": "Google",
+  "BrowserPath": null,
+  "OpenInNewBrowser": true
+}

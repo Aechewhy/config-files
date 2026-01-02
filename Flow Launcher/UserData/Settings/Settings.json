@@ -1,0 +1,429 @@
+{
+  "Hotkey": "Alt \u002B Space",
+  "OpenResultModifiers": "Ctrl",
+  "ColorScheme": "Dark",
+  "ShowOpenResultHotkey": true,
+  "WindowSize": 592,
+  "PreviewHotkey": "F1",
+  "AutoCompleteHotkey": "Ctrl \u002B Tab",
+  "AutoCompleteHotkey2": "",
+  "SelectNextItemHotkey": "Tab",
+  "SelectNextItemHotkey2": "Ctrl \u002B J",
+  "SelectPrevItemHotkey": "Shift \u002B Tab",
+  "SelectPrevItemHotkey2": "Ctrl \u002B K",
+  "SelectNextPageHotkey": "PageUp",
+  "SelectPrevPageHotkey": "Next",
+  "OpenContextMenuHotkey": "Ctrl\u002BO",
+  "SettingWindowHotkey": "Ctrl\u002BI",
+  "CycleHistoryUpHotkey": "Alt \u002B Up",
+  "CycleHistoryDownHotkey": "Alt \u002B Down",
+  "Language": "en",
+  "Theme": "OnsetGlaze",
+  "UseDropShadowEffect": false,
+  "WindowHeightSize": 48,
+  "ItemHeightSize": 58,
+  "QueryBoxFontSize": 24,
+  "ResultItemFontSize": 16,
+  "ResultSubItemFontSize": 13,
+  "QueryBoxFont": "Segoe UI",
+  "QueryBoxFontStyle": null,
+  "QueryBoxFontWeight": null,
+  "QueryBoxFontStretch": null,
+  "ResultFont": "Segoe UI",
+  "ResultFontStyle": null,
+  "ResultFontWeight": null,
+  "ResultFontStretch": null,
+  "ResultSubFont": "Segoe UI",
+  "ResultSubFontStyle": null,
+  "ResultSubFontWeight": null,
+  "ResultSubFontStretch": null,
+  "UseGlyphIcons": true,
+  "UseAnimation": true,
+  "UseSound": false,
+  "SoundVolume": 50,
+  "UseClock": true,
+  "UseDate": true,
+  "TimeFormat": "HH:mm:ss",
+  "DateFormat": "ddd dd\u0027/\u0027MM",
+  "FirstLaunch": false,
+  "SettingWindowWidth": 1373.6000000000001,
+  "SettingWindowHeight": 768.8000000000001,
+  "SettingWindowTop": 96,
+  "SettingWindowLeft": 81.60000000000001,
+  "SettingWindowState": 2,
+  "CustomExplorerIndex": 0,
+  "CustomExplorerList": [
+    {
+      "Name": "Explorer",
+      "Path": "explorer",
+      "FileArgument": "/select, \u0022%f\u0022",
+      "DirectoryArgument": "\u0022%d\u0022",
+      "Editable": false
+    },
+    {
+      "Name": "Total Commander",
+      "Path": "C:\\Program Files\\totalcmd\\TOTALCMD64.exe",
+      "FileArgument": "/O /A /S /T \u0022%f\u0022",
+      "DirectoryArgument": "/O /A /S /T \u0022%d\u0022",
+      "Editable": true
+    },
+    {
+      "Name": "Directory Opus",
+      "Path": "C:\\Program Files\\GPSoftware\\Directory Opus\\dopusrt.exe",
+      "FileArgument": "/cmd Go \u0022%f\u0022 NEW",
+      "DirectoryArgument": "/cmd Go \u0022%d\u0022 NEW",
+      "Editable": true
+    },
+    {
+      "Name": "Files",
+      "Path": "Files",
+      "FileArgument": "-select \u0022%f\u0022",
+      "DirectoryArgument": "-select \u0022%d\u0022",
+      "Editable": true
+    }
+  ],
+  "CustomBrowserIndex": 4,
+  "CustomBrowserList": [
+    {
+      "Name": "Default",
+      "Path": "*",
+      "PrivateArg": "",
+      "EnablePrivate": false,
+      "OpenInTab": true,
+      "Editable": false
+    },
+    {
+      "Name": "Google Chrome",
+      "Path": "chrome",
+      "PrivateArg": "-incognito",
+      "EnablePrivate": false,
+      "OpenInTab": true,
+      "Editable": false
+    },
+    {
+      "Name": "Mozilla Firefox",
+      "Path": "firefox",
+      "PrivateArg": "-private",
+      "EnablePrivate": true,
+      "OpenInTab": true,
+      "Editable": false
+    },
+    {
+      "Name": "MS Edge",
+      "Path": "msedge",
+      "PrivateArg": "-inPrivate",
+      "EnablePrivate": false,
+      "OpenInTab": true,
+      "Editable": false
+    },
+    {
+      "Name": "Brave",
+      "Path": "C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe",
+      "PrivateArg": null,
+      "EnablePrivate": false,
+      "OpenInTab": true,
+      "Editable": true
+    }
+  ],
+  "ShouldUsePinyin": false,
+  "AlwaysPreview": true,
+  "AlwaysStartEn": true,
+  "QuerySearchPrecision": "Regular",
+  "AutoUpdates": false,
+  "WindowLeft": 472,
+  "WindowTop": 204,
+  "CustomWindowLeft": 0,
+  "CustomWindowTop": 0,
+  "KeepMaxResults": true,
+  "MaxResultsToShow": 10,
+  "ActivateTimes": 4609,
+  "CustomPluginHotkeys": [],
+  "CustomShortcuts": [],
+  "DontPromptUpdateMsg": false,
+  "EnableUpdateLog": false,
+  "StartFlowLauncherOnSystemStartup": true,
+  "HideOnStartup": true,
+  "HideNotifyIcon": false,
+  "LeaveCmdOpen": false,
+  "HideWhenDeactivated": true,
+  "SearchWindowScreen": "Focus",
+  "SearchWindowAlign": "Center",
+  "CustomScreenNumber": 1,
+  "IgnoreHotkeysOnFullscreen": true,
+  "Proxy": {
+    "Enabled": false,
+    "Server": null,
+    "Port": 0,
+    "UserName": null,
+    "Password": null
+  },
+  "LastQueryMode": "Empty",
+  "AnimationSpeed": "Fast",
+  "CustomAnimationLength": 360,
+  "PluginSettings": {
+    "PythonExecutablePath": "C:\\Users\\LENOVO LEGION\\scoop\\apps\\Flow-Launcher\\current\\app-1.19.5\\UserData\\Environments\\Python\\PythonEmbeddable-v3.11.4\\pythonw.exe",
+    "NodeExecutablePath": "",
+    "Plugins": {
+      "0ECADE17459B49F587BF81DC3A125110": {
+        "ID": "0ECADE17459B49F587BF81DC3A125110",
+        "Name": "Browser Bookmarks",
+        "Version": "3.3.4",
+        "ActionKeywords": [
+          "bm"
+        ],
+        "Priority": 0,
+        "Disabled": false
+      },
+      "CEA0FDFC6D3B4085823D60DC76F28855": {
+        "ID": "CEA0FDFC6D3B4085823D60DC76F28855",
+        "Name": "Calculator",
+        "Version": "3.1.5",
+        "ActionKeywords": [
+          "="
+        ],
+        "Priority": 0,
+        "Disabled": false
+      },
+      "572be03c74c642baae319fc283e561a8": {
+        "ID": "572be03c74c642baae319fc283e561a8",
+        "Name": "Explorer",
+        "Version": "3.2.4",
+        "ActionKeywords": [
+          "*",
+          "doc:",
+          "*",
+          "*",
+          "*",
+          "\u0027",
+          "/"
+        ],
+        "Priority": 0,
+        "Disabled": false
+      },
+      "6A122269676E40EB86EB543B945932B9": {
+        "ID": "6A122269676E40EB86EB543B945932B9",
+        "Name": "Plugin Indicator",
+        "Version": "3.0.7",
+        "ActionKeywords": [
+          "?"
+        ],
+        "Priority": 0,
+        "Disabled": false
+      },
+      "9f8f9b14-2518-4907-b211-35ab6290dee7": {
+        "ID": "9f8f9b14-2518-4907-b211-35ab6290dee7",
+        "Name": "Plugins Manager",
+        "Version": "3.2.4",
+        "ActionKeywords": [
+          "pm"
+        ],
+        "Priority": 0,
+        "Disabled": false
+      },
+      "b64d0a79-329a-48b0-b53f-d658318a1bf6": {
+        "ID": "b64d0a79-329a-48b0-b53f-d658318a1bf6",
+        "Name": "Process Killer",
+        "Version": "3.0.8",
+        "ActionKeywords": [
+          "|"
+        ],
+        "Priority": 0,
+        "Disabled": false
+      },
+      "791FC278BA414111B8D1886DFE447410": {
+        "ID": "791FC278BA414111B8D1886DFE447410",
+        "Name": "Program",
+        "Version": "3.3.4",
+        "ActionKeywords": [
+          "*"
+        ],
+        "Priority": 0,
+        "Disabled": false
+      },
+      "D409510CD0D2481F853690A07E6DC426": {
+        "ID": "D409510CD0D2481F853690A07E6DC426",
+        "Name": "Shell",
+        "Version": "3.2.5",
+        "ActionKeywords": [
+          "\u003E"
+        ],
+        "Priority": 0,
+        "Disabled": false
+      },
+      "CEA08895D2544B019B2E9C5009600DF4": {
+        "ID": "CEA08895D2544B019B2E9C5009600DF4",
+        "Name": "System Commands",
+        "Version": "3.1.7",
+        "ActionKeywords": [
+          "*"
+        ],
+        "Priority": 0,
+        "Disabled": false
+      },
+      "0308FD86DE0A4DEE8D62B9B535370992": {
+        "ID": "0308FD86DE0A4DEE8D62B9B535370992",
+        "Name": "URL",
+        "Version": "3.0.8",
+        "ActionKeywords": [
+          "*"
+        ],
+        "Priority": 0,
+        "Disabled": false
+      },
+      "565B73353DBF4806919830B9202EE3BF": {
+        "ID": "565B73353DBF4806919830B9202EE3BF",
+        "Name": "Web Searches",
+        "Version": "3.1.4",
+        "ActionKeywords": [
+          "*",
+          "drive",
+          "stackoverflow",
+          "yt",
+          "gh",
+          "map",
+          "fb",
+          "wk",
+          "tsr",
+          "rd",
+          "en",
+          "ytm",
+          "gi",
+          "ddg",
+          "gpt"
+        ],
+        "Priority": 0,
+        "Disabled": false
+      },
+      "5043CETYU6A748679OPA02D27D99677A": {
+        "ID": "5043CETYU6A748679OPA02D27D99677A",
+        "Name": "Windows Settings",
+        "Version": "4.0.12",
+        "ActionKeywords": [
+          "$"
+        ],
+        "Priority": 0,
+        "Disabled": false
+      },
+      "F737A9223560B3C6833B5FFB8CDF78E5": {
+        "ID": "F737A9223560B3C6833B5FFB8CDF78E5",
+        "Name": "Window Walker",
+        "Version": "3.0.3",
+        "ActionKeywords": [
+          "*"
+        ],
+        "Priority": 5,
+        "Disabled": false
+      },
+      "F6B8C1BC8441496798D2CE2BADB0E95E": {
+        "ID": "F6B8C1BC8441496798D2CE2BADB0E95E",
+        "Name": "Browser History",
+        "Version": "0.6.0",
+        "ActionKeywords": [
+          "bh"
+        ],
+        "Priority": 0,
+        "Disabled": false
+      },
+      "0930723F-73EA-488A-BEE9-8B8D4845B2F1": {
+        "ID": "0930723F-73EA-488A-BEE9-8B8D4845B2F1",
+        "Name": "PowerToys",
+        "Version": "1.0.0",
+        "ActionKeywords": [
+          "ptoy"
+        ],
+        "Priority": 0,
+        "Disabled": false
+      },
+      "D8A705AD7AB849ACB581FF46D3B59816": {
+        "ID": "D8A705AD7AB849ACB581FF46D3B59816",
+        "Name": "Scoop",
+        "Version": "1.0.1",
+        "ActionKeywords": [
+          "scoop"
+        ],
+        "Priority": 0,
+        "Disabled": false
+      },
+      "75763350-A89D-4942-B697-14875D94C222": {
+        "ID": "75763350-A89D-4942-B697-14875D94C222",
+        "Name": "ShareX_Flow_Plugin",
+        "Version": "1.0.0",
+        "ActionKeywords": [
+          "shx"
+        ],
+        "Priority": 0,
+        "Disabled": false
+      },
+      "7D530704C68E4838896BBA5C4C1DE7DF": {
+        "ID": "7D530704C68E4838896BBA5C4C1DE7DF",
+        "Name": "Win Hotkey",
+        "Version": "4.0.0",
+        "ActionKeywords": [
+          "*"
+        ],
+        "Priority": 0,
+        "Disabled": false
+      },
+      "72E67DFE0F6F482395AF3CD0A3BC6F04": {
+        "ID": "72E67DFE0F6F482395AF3CD0A3BC6F04",
+        "Name": "WinsFlow",
+        "Version": "1.0.0",
+        "ActionKeywords": [
+          "wn"
+        ],
+        "Priority": 0,
+        "Disabled": false
+      },
+      "7d2d209d-5ab9-42dd-ae9b-2487b57ff569": {
+        "ID": "7d2d209d-5ab9-42dd-ae9b-2487b57ff569",
+        "Name": "VolumeFlow",
+        "Version": "1.1.0",
+        "ActionKeywords": [
+          "vl"
+        ],
+        "Priority": 0,
+        "Disabled": false
+      },
+      "ff9385ec-0e95-452f-bef2-62456f66fe0f": {
+        "ID": "ff9385ec-0e95-452f-bef2-62456f66fe0f",
+        "Name": "Clipboard\u002B",
+        "Version": "2.3.0",
+        "ActionKeywords": [
+          "cb"
+        ],
+        "Priority": 0,
+        "Disabled": false
+      },
+      "3AF7F9DD4367439AA4730641D99EDA21": {
+        "ID": "3AF7F9DD4367439AA4730641D99EDA21",
+        "Name": "FlowTrumpet",
+        "Version": "1.1.0",
+        "ActionKeywords": [
+          "vol"
+        ],
+        "Priority": 0,
+        "Disabled": false
+      },
+      "CF8389C7-61AC-4387-93DE-370B31BD07EB": {
+        "ID": "CF8389C7-61AC-4387-93DE-370B31BD07EB",
+        "Name": "WebApp launcher",
+        "Version": "2.0.16",
+        "ActionKeywords": [
+          "wap"
+        ],
+        "Priority": 0,
+        "Disabled": true
+      },
+      "73f2c04d-176a-4586-9ff5-69fae63321ef": {
+        "ID": "73f2c04d-176a-4586-9ff5-69fae63321ef",
+        "Name": "General Converter",
+        "Version": "2.0.2",
+        "ActionKeywords": [
+          "unit"
+        ],
+        "Priority": 0,
+        "Disabled": false
+      }
+    }
+  }
+}

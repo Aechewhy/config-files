@@ -1,0 +1,35 @@
+#Requires AutoHotkey v2.0
+
+; ─── DEFINE THE COMBO FUNCTION ──────────────────────────────────────────────
+; prefixKey  := first key  (e.g. ".", "d", "c")
+; triggerKey := second key (e.g. "1", "f", "v")
+; programExe := process name (e.g. "notepad.exe", "Code.exe")
+; programPath:= path to EXE   (full path or just exe name)
+DefineCombo(prefixKey, triggerKey, programExe, programPath) {
+    comboName := "~" . prefixKey . " & " . triggerKey
+    Hotkey(comboName
+        , () => {  ; lambda “captures” programExe & programPath automatically
+            if WinExist("ahk_exe " . programExe) {
+                WinActivate
+                WinShow
+                WinRestore
+            } else {
+                Run programPath
+            }
+        }
+        , "On")
+}
+
+; ─── RELOAD SCRIPT WITH ALT+F2 ──────────────────────────────────────────────
+!F2:: Reload
+
+; ─── EXAMPLE USAGE ──────────────────────────────────────────────────────────
+; • Dot + 1 → Notepad
+DefineCombo(".", "1"
+           , "notepad.exe"
+           , "notepad.exe")
+
+; • D + F → VS Code
+DefineCombo("d", "f"
+           , "Code.exe"
+           , "C:\Users\You\AppData\Local\Programs\Microsoft VS Code\Code.exe")

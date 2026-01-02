@@ -1,0 +1,194 @@
+!F5:: Reload
+#Requires AutoHotkey v2.0
+
+; ─── Dot + 1 combo ────────────────────────────────────────────────────────
+~`; & `:: {
+    if WinExist("ahk_exe WindowsTerminal.exe") {
+        WinActivate
+        WinShow
+    } else {
+        Run "wt.exe"
+    }
+}
+~`; & f:: {
+    if WinExist("ahk_exe zen.exe") {
+        WinShow
+        WinActivate
+    } else {
+        Run "zen.exe"
+    }
+}
+~`; & a:: {
+    if WinExist("ahk_exe code.exe") {
+        WinActivate
+        WinShow
+    } else {
+        Run "C:\Users\LENOVO LEGION\AppData\Local\Programs\Microsoft VS Code\Code.exe"
+    }
+}
+~`; & d:: {
+    if WinExist("ahk_exe  Caprine.exe") {
+        WinActivate
+        WinShow
+    } else {
+        Run "C:\Users\LENOVO LEGION\AppData\Local\Programs\Caprine\Caprine.exe"
+    }
+}
+~`; & s:: {
+    if WinExist("ahk_exe zalo.exe") {
+        WinActivate
+        WinShow
+    } else {
+        Run "C:\Users\LENOVO LEGION\AppData\Local\Programs\Zalo\Zalo.exe"
+    }
+}
+~`; & e:: {
+    if WinExist("ahk_exe  msedge.exe") {
+        WinActivate
+        WinShow
+    } else {
+        Run "msedge.exe"
+    }
+}
+~`; & w:: {
+    if WinExist("ahk_exe  brave.exe") {
+        WinActivate
+        WinShow
+    } else {
+        Run "brave.exe"
+    }
+}
+~`; & q:: {
+    if WinExist("ahk_exe  notion.exe") {
+        WinActivate
+        WinShow
+    } else {
+        Run "C:\Users\LENOVO LEGION\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Notion.lnk"
+    }
+}
+; The`~.`prefix means “allow . to send itself, ” even though it’s being used
+; as a combo prefix.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; ;Alternative
+; RAlt & `:: {
+;     if WinExist("ahk_exe WindowsTerminal.exe") {
+;         WinActivate
+;         WinShow
+;     } else {
+;         Run "wt.exe"
+;     }
+; }
+; RAlt & f:: {
+;     if WinExist("ahk_exe  zen.exe") {
+;         WinShow
+;         WinActivate
+;     } else {
+;         Run "zen.exe"
+;     }
+; }
+; RAlt & a:: {
+;     if WinExist("ahk_exe  code.exe") {
+;         WinActivate
+;         WinShow
+;     } else {
+;         Run "C:\Users\LENOVO LEGION\AppData\Local\Programs\Microsoft VS Code\Code.exe"
+;     }
+; }
+; RAlt & d:: {
+;     if WinExist("ahk_exe  Caprine.exe") {
+;         WinActivate
+;         WinShow
+;     } else {
+;         Run "C:\Users\LENOVO LEGION\AppData\Local\Programs\Caprine\Caprine.exe"
+;     }
+; }
+; RAlt & s:: {
+;     if WinExist("ahk_exe  zalo.exe") {
+;         WinActivate
+;         WinShow
+;     } else {
+;         Run "C:\Users\LENOVO LEGION\AppData\Local\Programs\Zalo\Zalo.exe"
+;     }
+; }
+; RAlt & e:: {
+;     if WinExist("ahk_exe  msedge.exe") {
+;         WinActivate
+;         WinShow
+;     } else {
+;         Run "msedge.exe"
+;     }
+; }
+; RAlt & w:: {
+;     if WinExist("ahk_exe  brave.exe") {
+;         WinActivate
+;         WinShow
+;     } else {
+;         Run "brave.exe"
+;     }
+; }
+; RAlt & q:: {
+;     if WinExist("ahk_exe  notion.exe") {
+;         WinActivate
+;         WinShow
+;     } else {
+;         Run "C:\Users\LENOVO LEGION\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Notion.lnk"
+;     }
+; }
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+; ~Space & `:: {
+;     if WinExist("ahk_exe WindowsTerminal.exe") {
+;         WinActivate
+;         WinShow
+;     } else {
+;         Run "wt.exe"
+;     }
+; }
+; ~Space & f:: {
+;     if WinExist("ahk_exe  zen.exe") {
+;         WinShow
+;         WinActivate
+;     } else {
+;         Run "zen.exe"
+;     }
+; }
+; ~Space & a:: {
+;     if WinExist("ahk_exe  code.exe") {
+;         WinActivate
+;         WinShow
+;     } else {
+;         Run "C:\Users\LENOVO LEGION\AppData\Local\Programs\Microsoft VS Code\Code.exe"
+;     }
+; }
+; ~Space & d:: {
+;     if WinExist("ahk_exe  Caprine.exe") {
+;         WinActivate
+;         WinShow
+;     } else {
+;         Run "C:\Users\LENOVO LEGION\AppData\Local\Programs\Caprine\Caprine.exe"
+;     }
+; }
+; ~Space & s:: {
+;     if WinExist("ahk_exe  zalo.exe") {
+;         WinActivate
+;         WinShow
+;     } else {
+;         Run "C:\Users\LENOVO LEGION\AppData\Local\Programs\Zalo\Zalo.exe"
+;     }
+; }
+; ~Space & e:: {
+;     if WinExist("ahk_exe  msedge.exe") {
+;         WinActivate
+;         WinShow
+;     } else {
+;         Run "msedge.exe"
+;     }
+; }
+; ~Space & w:: {
+;     if WinExist("ahk_exe  brave.exe") {
+;         WinActivate
+;         WinShow
+;     } else {
+;         Run "brave.exe"
+;     }
+; }

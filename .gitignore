@@ -1,0 +1,37 @@
+*cache*/
+*Cache*/
+*CACHE*/
+*cache*
+*Cache*
+*CACHE*
+
+*log*/
+*Log*/
+*LOG*/
+*logs*/
+*Logs*/
+*LOGS*/
+
+*log*
+*Log*
+*LOG*
+*logs*
+*Logs*
+*LOGS*
+#OBS studio
+OBS studio/obs-studio/logs/
+OBS studio/obs-studio/crashes/
+OBS studio/obs-studio/updates/
+OBS studio/obs-studio/profiler_data/
+
+# large files
+*.rar
+*.zip
+*.7z
+
+# Python
+__pycache__/
+*.pyc
+# Windows junk
+Thumbs.db
+desktop.ini

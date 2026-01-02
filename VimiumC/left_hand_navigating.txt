@@ -1,0 +1,113 @@
+unmapAll
+map ? showHelp
+map <a-/> enterInsertMode
+
+map W scrollPageUp
+map S scrollPageDown
+map A scrollLeft
+map D scrollRight
+map w scrollUp
+map s scrollDown
+map q scrollFullPageUp 
+map e scrollFullPageDown
+map Q scrollToTop
+map E scrollToBottom
+map a goBack
+run <a-c-s-a> A reuse="newFg"
+map d goForward
+map { goPrevious
+map } goNext
+
+map j scrollPxUp
+map k scrollPxDown 
+map J scrollPxLeft
+map K scrollPxRight 
+
+map Rr goUp
+map RR goToRoot
+map z previousTab
+map c nextTab
+map <a-c> lastTab
+map <a-z> firstTab 
+map Z moveTabLeft
+map C moveTabRight
+map M moveTabToNextWindow
+map rr visitPreviousTab
+map ra visitPreviousTab acrossWindows
+
+map xx removeTab
+map xd discardTab
+map xZ closeTabsOnLeft
+map xC closeTabsOnRight 
+map xz closeTabsOnLeft $count=-1 # close onely one
+map xc closeTabsOnRight $count=1 # close only one
+map xX closeOtherTabs
+map xr removeRightTab
+map XX restoreGivenTab
+map Xx restoreTab
+map Xr reopenTab
+
+map gw moveTabToNewWindow
+map gi moveTabToIncognito
+map gW joinTabs
+
+map \c sortTabs sort="createTime"
+map \r sortTabs sort="recency"
+
+map f LinkHints.activate
+map v LinkHints.activateOpenInNewTab
+map V LinkHints.activateOpenInNewForegroundTab
+map Fd LinkHints.activateDownloadLink
+map Fe LinkHints.activateOpenVomnibar
+map Fi LinkHints.activateCopyImage
+map FI LinkHints.activateOpenImage
+map Fq LinkHints.activateWithQueue
+map Fs LinkHints.activateSearchLinkText
+map Ft LinkHints.activateCopyLinkText
+map Fc LinkHints.activateCopyLinkUrl
+map Fv LinkHints.activateSelect
+map Fw LinkHints.activateOpenIncognito
+map FD LinkHints.activateDownloadImage
+map Fh LinkHints.activateHover
+
+map t Vomnibar.activateTabs
+map O Vomnibar.activate
+map o Vomnibar.activateInNewTab
+map b Vomnibar.activateBookmarksInNewTab
+map B Vomnibar.activateBookmarks
+map u Vomnibar.activateEditUrl
+map U Vomnibar.activateEditUrlInNewTab
+map h Vomnibar.activateHistoryInNewTab
+map H Vomnibar.activateHistory
+
+map m Marks.activateCreate
+map ` Marks.activate
+map <c-`> Marks.clearLocal
+map <c-~> Marks.clearGlobal
+
+map / enterFindMode
+map n performFind
+map N performBackwardsFind
+map <a-n> performAnotherFind
+map <c-/> clearFindHistory
+
+map [ zoomIn
+map ] zoomOut
+map | zoomReset
+
+map Pc openCopiedUrlInCurrentTab
+map Pn openCopiedUrlInNewTab
+map <a-c-c> copyCurrentUrl type="url"
+
+map <a-|> enterInsertMode
+map i focusInput
+map <c-p> togglePinTab
+map l toggleReaderMode
+map ' enterVisualMode
+map " enterVisualLineMode
+
+map ;y autoOpen keyword="YT"
+map ;r autoOpen keyword="RD"
+map ;m autoOpen keyword="MS"
+map ;g autoOpen keyword="GPT"
+" Character use for link hints: wertadfgzcvxbq

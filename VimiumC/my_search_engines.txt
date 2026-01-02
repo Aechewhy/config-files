@@ -1,0 +1,86 @@
+wk: http://en.wikipedia.org/wiki/$s{_}
+wk|wiki.en|en.wiki|e.w: \
+  https://en.wikipedia.org/w/index.php?title=Special:Search&search=$s \
+  Wikipedia (en-US)
+g|go|gg|ggg|Google|google|个: https://www.google.com/search?ie=utf-8&q=$s \
+  www.google.com re=/^(?:\.[a-z]{2,4})?\/search\b.*?[#&?]q=([^#&]*)/i \
+  blank=https://www.google.com Google
+g.i|g.image: https://www.google.com/search?newwindow=1&tbm=isch&q=$s \
+  www.google.com \
+  re=/^(?:\.[a-z]{2,4})?\/search\b.*?[#&?]tbm=isch\b.*?[#&]q=([^#&]*)/i
+g.s|g.x|g.xs|gs|gx|gxs: https://scholar.google.com/scholar?hl=zh-CN&q=$s \
+  scholar.google.com re=/^(?:\.[a-z]{2,4})?\/scholar\b.*?[#&?]q=([^#&]*)/i \
+  谷歌学术
+Js|js\:|Js\:|JS|JS\:|javascript\:|run\:: javascript:\ $S; re= JavaScript
+w3s.tag|html.tag|tag.w3s: \
+  http://www.w3school.com.cn/tags/tag_$S{$1}.asp W3school Tag
+te|t.e|g.te|g.tr.e: https://translate.google.com/?ie=utf-8#auto/en/$s \
+  Google Translate
+ip: . re=/^((?:\d{1,3}\.){3}\d{1,3}(?::\d{2,5})?)\/?$/
+ip|IP|Ip: ip\ $S IP 查询
+dns\:|DNS\:: http://119.29.29.29/d?dn=$s Public DNS
+ciu|caniuse|CanIUse: http://caniuse.com/#search=$S Can I Use
+
+v\:|v\://: vimium://$S vimium:// re=/^([^#?]*)\.html(?:\#\!?(.*))?/i Vimium C Pages
+v.d: vimium://show\ $S Vimium C Display
+v.dd: $S vimium://show re=/\#\!(\w+)(?:\+|%20| )download=([^&]*)&(.*)$/i
+v.dd: vimium://show\ $S{$1\ download=$2&$+3} re= Vimium C Display
+v.i: $S \
+  vimium://show image re=/^(?:\+|%20| )(?:(?:download|src)=[^&]*&){0,2}(.*)$/i
+v.i: vimium://show\ image\ auto=once&$S re= Vimium C Display
+v.m: $S \
+  vimium://show url vimium://math re=/[\.\d][\.\d)]*|\w+(?:\([\w\.]+)?|[^\w\s]+/g
+v.m|math|vimium\://math|v.e|eval\:|v\://eval|vimium\://eval: vimium://math\ $S \
+  re= Calculate
+v.sum|sum\:: vimium://sum\ $S re= Calculate Sum
+v.mul|mul\:: vimium://mul\ $S re= Calculate Mul
+v.avg|avg\:: vimium://avg\ $S re= Calculate Avg
+v.st: vimium://status\ $S re= Force tab status
+v.u|v.url|v.search|u\:|url\:: vimium://search\ $S re= Search
+v.c|copy\:|v\://copy|vimium\://copy: vimium://copy\ $S re= Copy to Clipboard
+v.mc|v.math-copy: vimium://search-copy\ vimium://math\ $S \
+  re= Calculate and Copy
+v.p|v.parse: vimium://parse\ $S re= Redo Search
+v.bi: vimium://parse/bi\ $S re= Search in Bing
+cd: vimium://cd\ $S re=
+\:i: vimium://sed/s/^//,lower\ $S re= Lower case
+
+gh: https://github.com/search?q=$s  \
+  blank=https://github.com/ GitHub
+
+YT: https://www.youtube.com/
+y|yt: https://www.youtube.com/results?search_query=%s \
+  blank=https://www.youtube.com/ YouTube
+
+g.m|gm|gmap: https://www.google.com/maps?q=%s \
+  blank=https://www.google.com/maps Google Maps
+
+br|brave: https://search.brave.com/search?q=%s Brave
+
+dd|dg|ddg: https://duckduckgo.com/?q=%s DuckDuckGo
+
+en|dic: https://dictionary.cambridge.org/dictionary/english/%s Cambridge Dictionary
+
+site: javascript:location='https://www.google.com/search?num=100&q=site:'+escape(location.hostname)+'+%s'
+
+od: https://husteduvn-my.sharepoint.com/query?q=%s&searchScope=all OneDrive
+
+tsr: https://www.thesaurus.com/browse/%s Thesaurus
+
+ytm: https://music.youtube.com/search?q=%s \
+blank=https://music.youtube.com/ YoutubeMusic
+
+cws: https://chromewebstore.google.com/search/%s Chromewebstore
+
+esp: https://www.spanishdict.com/translation/%s Spanish Dictionary
+
+rd: https://www.reddit.com/search/?q=%s \
+blank=https://www.reddit.com/ Reddit
+RD: https://www.reddit.com/
+
+MS: https://www.messenger.com/
+
+gpt: http://chatgpt.com/?q=%s \
+blank=http://chatgpt.com/ ChatGPT
+GPT: http://chatgpt.com/
+
