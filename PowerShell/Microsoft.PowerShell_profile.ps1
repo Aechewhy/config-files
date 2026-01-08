@@ -2,6 +2,7 @@
 # . "$PSScriptRoot\Scripts\modules.ps1"
 # Import aliases
 . "$PSScriptRoot\Scripts\aliases.ps1"
+. "$PSScriptRoot\Scripts\symlink.ps1"
 ######################################################
 #OH MY POSH
 ###################################################### 
