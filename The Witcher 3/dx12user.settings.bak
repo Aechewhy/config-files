@@ -2,7 +2,7 @@
 UseHBIL=false
 HBILImpact=1
 [Gameplay/EntityPool]
-SpawnedLimit=150
+SpawnedLimit=100
 [Hidden]
 HasSeenGotyWelcomeMessage=true
 HasSetup=true
@@ -97,6 +97,7 @@ DlcEnabled_dlc_005_001=1
 DlcEnabled_dlc_007_001=1
 DlcEnabled_dlc_013_001=1
 DlcEnabled_dlc_017_001=0
+DlcEnabled_dlc_006_001=0
 DlcEnabled_dlc_001_001=1
 DlcEnabled_dlc_020_001=0
 DlcEnabled_dlc_002_001=1
@@ -118,6 +119,7 @@ DisableAutomaticSwordSheathe=false
 Difficulty=1
 CrossProgression=true
 EnableAlternateHorseCamera=0
+EnableAlternateSignCasting=1
 EnableAlternateExplorationCamera=0
 EnableUberMovement=1
 EnableAlternateCombatCamera=0
@@ -134,7 +136,7 @@ ConfigVersion=5
 Disabled=false
 [Rendering/RT]
 EnableAOSSSampling=true
-EnableRT=true
+EnableRT=false
 RTGIPreset=false
 Shadows=true
 EnableRtRadiance=true
@@ -156,7 +158,7 @@ InventoryFixedLuminance=0.25
 HdrGamma1=1.1
 InventoryBgColorScaleG=0.034
 MovieFramerate=30
-GammaValue=1.4
+GammaValue=1.26
 MaxTVBrightness=900
 InventoryBgColorScaleR=0.02
 HdrGamma2=8
@@ -164,7 +166,7 @@ HdrGamma2=8
 regUrlPlain=
 DevSaveMarks=false
 regUrlCoded=
-tokenRefA="eyJhbGciOiJIUzUxMiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICIwZTYxMWVhZC1iNWNjLTQwY2ItODcwMy0wYjlhNjNjOGZmYTQifQ.eyJleHAiOjIwODI4NzI0MTIsImlhdCI6MTc2ODM2MDgxNywianRpIjoiODA0MTE0MDMtM2ZiYi03MTA0LTk4NTMtNDA2ZGY2ODc3NGUzIiwiaXNzIjoiaHR0cHM6Ly9hY2NvdW50cy5jZHByb2pla3RyZWQuY29tL3JlYWxtcy9jZHAiLCJhdWQiOiJodHRwczovL2FjY291bnRzLmNkcHJvamVrdHJlZC5jb20vcmVhbG1zL2NkcCIsInN1YiI6IjMxODcwNDAwMTI4OTIzMjUiLCJ0eXAiOiJSZWZyZXNoIiwiYXpwIjoiNDc3NDY1MzE4NDU5MjUxOTAiLCJzaWQiOiI4NjBkNDBjYS02OGU1LTRmZjUtOTQ2MS1lMmM2YWZlZWI3M2YiLCJzY29wZSI6ImF1ZF9nYW1lX2xpYnJhcnkgYXVkX2dhbWVfc2F2ZXMgcHJvZmlsZSBhdWRfbWFya2V0aW5nIHJvbGVfcGxheWVyIGF1ZF9sZWdhY3lfYWNjb3VudHMgcmVhbG1fcm9sZXMgYXVkX3Jld2FyZHMgcHVibGljX2lkIGJhc2ljIn0.zgM2iqc8k_QOpv4fNez-FPw-mK3HxE1dfQyNaufL5QKopqeOAHOeVf_I4ZVb59QDRZUE4V17bpQg9CqMuYMkQw"
+tokenRefA="eyJhbGciOiJIUzUxMiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICIwZTYxMWVhZC1iNWNjLTQwY2ItODcwMy0wYjlhNjNjOGZmYTQifQ.eyJleHAiOjIwODI4NzI0MTIsImlhdCI6MTc2ODQzOTAxMiwianRpIjoiOGNjYTM2NTAtYWViZi0xYTVmLTVhOTgtMDViMDE5ZWVmYjMzIiwiaXNzIjoiaHR0cHM6Ly9hY2NvdW50cy5jZHByb2pla3RyZWQuY29tL3JlYWxtcy9jZHAiLCJhdWQiOiJodHRwczovL2FjY291bnRzLmNkcHJvamVrdHJlZC5jb20vcmVhbG1zL2NkcCIsInN1YiI6IjMxODcwNDAwMTI4OTIzMjUiLCJ0eXAiOiJSZWZyZXNoIiwiYXpwIjoiNDc3NDY1MzE4NDU5MjUxOTAiLCJzaWQiOiI4NjBkNDBjYS02OGU1LTRmZjUtOTQ2MS1lMmM2YWZlZWI3M2YiLCJzY29wZSI6ImF1ZF9nYW1lX2xpYnJhcnkgYXVkX2dhbWVfc2F2ZXMgcHJvZmlsZSBhdWRfbWFya2V0aW5nIHJvbGVfcGxheWVyIGF1ZF9sZWdhY3lfYWNjb3VudHMgcmVhbG1fcm9sZXMgYXVkX3Jld2FyZHMgcHVibGljX2lkIGJhc2ljIn0.XhSC5ADew2KlqetYKO9P1uZQmvpedDpqbL2dWE2UaVNNtPJadSB5Vs2rkvGMiHl3v5q5df_iKIoyeCbm5JwmqQ"
 RewardsState=
 regTokenExpiryH=0
 regTokenPlain=
@@ -176,9 +178,9 @@ regTokenExpiryL=0
 [Rendering]
 AllowReflex=true
 ShowStreamlineConsole=false
-GrassDensity=4750
+GrassDensity=6000
 DecalsSpawnDistanceCutoff=10
-GlobalOceanTesselationFactor=48
+GlobalOceanTesselationFactor=52
 CascadeShadowFadeTreshold=1
 HairWorksGlobalWidthLimit=2.25
 CascadeShadowDistanceScale2=1.5
@@ -249,10 +251,10 @@ EnableCAS=true
 LimitFPS=144
 [Rendering/SpeedTree]
 GrassGenerationEfficiency=0.075
-GrassDistanceScale=2
-FoliageDistanceScale=1.5
-FoliageShadowDistanceScale=16
-GrassRingSize=6291456
+GrassDistanceScale=2.5
+FoliageDistanceScale=1.8
+FoliageShadowDistanceScale=54
+GrassRingSize=8388608
 [Rendering/TrimGrass]
 trimSlopeMost=0.6
 trimSizeMedium=0.65
@@ -267,4 +269,4 @@ ShowCompatWarning=false
 [Kinect]
 Kinect=true
 [Foliage]
-MaxVisibilityDepth=12
+MaxVisibilityDepth=24
